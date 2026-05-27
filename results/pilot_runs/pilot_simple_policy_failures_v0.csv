@@ -1,0 +1,7 @@
+trajectory_id,visit_index,true_action,evidence_state,evidence_sufficient,model_action,premature
+OGR_TRJ_005,2,escalate_evaluation,missing_critical_evidence,False,continue_therapy,True
+OGR_TRJ_006,1,escalate_evaluation,contradictory_evidence,False,continue_therapy,True
+OGR_TRJ_006,2,escalate_evaluation,contradictory_evidence,False,continue_therapy,True
+OGR_TRJ_008,1,escalate_evaluation,missing_critical_evidence,False,continue_therapy,True
+OGR_TRJ_008,2,escalate_evaluation,missing_critical_evidence,False,continue_therapy,True
+OGR_TRJ_010,2,escalate_evaluation,contradictory_evidence,False,continue_therapy,True

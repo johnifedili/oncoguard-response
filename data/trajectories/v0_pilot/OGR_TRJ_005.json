@@ -1,0 +1,192 @@
+{
+  "trajectory_id": "OGR_TRJ_005",
+  "schema_version": "1.1",
+  "trajectory_title": "Missing laboratory safety data before continuation",
+  "failure_being_tested": "missing laboratory safety data preventing authorization of continued therapy",
+  "authorization_dependency": [
+    "CBC_with_differential",
+    "hepatic_panel"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Metastatic HR-positive HER2-negative breast cancer on CDK4/6 inhibitor with missing safety labs."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic breast cancer",
+    "subtype": "HR-positive, HER2-negative",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "Palbociclib plus letrozole",
+    "line_of_therapy": "first-line",
+    "treatment_class": [
+      "CDK4/6 inhibitor",
+      "endocrine therapy"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": true,
+    "discordance": false,
+    "missing_evidence": true,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": false
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "Patient presents after first cycle of palbociclib plus letrozole. Symptoms are mild, but CBC with differential and hepatic panel are missing.",
+        "subjective_findings": [
+          "Mild fatigue",
+          "Mild nausea controlled with PRN medication"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Afebrile",
+          "No bleeding or bruising"
+        ],
+        "labs": "No CBC with differential or hepatic panel available.",
+        "imaging": "No new imaging since baseline.",
+        "toxicity_findings": "Neutropenia and hepatic toxicity cannot be assessed because required labs are missing."
+      },
+      "available_evidence": {
+        "imaging": false,
+        "labs": false,
+        "toxicity_assessment": "partial",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [
+        "CBC_with_differential",
+        "hepatic_panel"
+      ],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "labs"
+        ],
+        "delayed_expected_data": [
+          "cycle_2_pre_treatment_labs"
+        ],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "indeterminate_cancer_state",
+        "patient_state": "safety_undetermined_due_to_missing_labs",
+        "evidence_state": "missing_critical_evidence",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "critical_laboratory_data_missing",
+          "safety_cannot_be_confirmed",
+          "insufficient_evidence_for_definitive_continue"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "Patient still feels clinically well, but required CBC with differential and hepatic panel remain unavailable due to scheduling delay.",
+        "subjective_findings": [
+          "Patient feels well",
+          "No fever",
+          "No bleeding symptoms"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Stable exam"
+        ],
+        "labs": "CBC with differential and hepatic panel still missing.",
+        "imaging": "No interval imaging.",
+        "toxicity_findings": "Safety status remains unconfirmed because ANC and hepatic function are unavailable."
+      },
+      "available_evidence": {
+        "imaging": false,
+        "labs": false,
+        "toxicity_assessment": "partial",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [
+        "CBC_with_differential",
+        "hepatic_panel"
+      ],
+      "narrative_pressures": [
+        "patient_feels_well"
+      ],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "labs"
+        ],
+        "delayed_expected_data": [
+          "pre_cycle_labs"
+        ],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "indeterminate_cancer_state",
+        "patient_state": "safety_undetermined_due_to_missing_labs",
+        "evidence_state": "missing_critical_evidence",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "repeated_critical_labs_missing",
+          "prior_lab_escalation_unresolved",
+          "escalate_when_evidence_insufficient"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "CBC with differential and hepatic panel return acceptable. Patient remains stable and no new safety concern is identified.",
+        "subjective_findings": [
+          "Mild fatigue only",
+          "No fever",
+          "No bleeding"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Clinically stable"
+        ],
+        "labs": "CBC with differential acceptable; ANC adequate. Hepatic panel acceptable.",
+        "imaging": "No evidence of urgent progression requiring change.",
+        "toxicity_findings": "No clinically significant neutropenia or hepatotoxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "required_labs_available",
+          "no_uncontrolled_severe_toxicity",
+          "no_emergency_complication"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "trajectory_id": "OGR_TRJ_007",
+  "schema_version": "1.1",
+  "trajectory_title": "Radiographic response with immune-related toxicity discordance",
+  "failure_being_tested": "tumor response should not authorize continuation when patient-state toxicity creates a safety-driven need to hold therapy",
+  "authorization_dependency": [
+    "toxicity_assessment",
+    "organ_function_labs",
+    "clinical_stability"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Designed to test tumor-patient discordance: imaging response with immune-related hepatitis requiring temporary hold."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic melanoma",
+    "subtype": "cutaneous melanoma",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "Nivolumab-based immunotherapy",
+    "line_of_therapy": "first-line",
+    "treatment_class": [
+      "immune checkpoint inhibitor"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": true,
+    "discordance": true,
+    "missing_evidence": false,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": false
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "Restaging imaging shows partial response and the patient has only mild fatigue. Safety labs are acceptable.",
+        "subjective_findings": [
+          "Mild fatigue",
+          "No abdominal pain",
+          "No jaundice"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "No acute distress"
+        ],
+        "labs": "AST, ALT, bilirubin, and CBC are within acceptable range.",
+        "imaging": "CT shows decreased size of known metastatic lesions consistent with partial response.",
+        "toxicity_findings": "No clinically significant immune-related toxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "response",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "tumor_response_present",
+          "no_uncontrolled_severe_toxicity",
+          "no_emergency_complication"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "Imaging continues to show tumor response, but the patient develops marked transaminase elevation consistent with immune-related hepatitis.",
+        "subjective_findings": [
+          "New fatigue",
+          "Mild right upper quadrant discomfort",
+          "No fever"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "No hemodynamic instability"
+        ],
+        "labs": "AST and ALT are markedly elevated compared with baseline; bilirubin is mildly elevated.",
+        "imaging": "CT continues to show decreased tumor burden without progression.",
+        "toxicity_findings": "Findings concerning for clinically significant immune-related hepatitis."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [
+        "radiographic_response_bias"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "response",
+        "patient_state": "immune_related_adverse_event",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "hold_therapy",
+        "authorization_criteria_matched": [
+          "clinically_significant_toxicity",
+          "patient_safety_overrides_tumor_response",
+          "immediate_continuation_not_safe",
+          "hold_required_despite_response"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "After holding immunotherapy and managing hepatitis, liver enzymes improve and imaging continues to show response.",
+        "subjective_findings": [
+          "Fatigue improved",
+          "No abdominal pain",
+          "No jaundice"
+        ],
+        "objective_findings": [
+          "Clinically stable",
+          "Functional status preserved"
+        ],
+        "labs": "AST and ALT improved substantially and are now acceptable for cautious resumption.",
+        "imaging": "CT remains consistent with ongoing response.",
+        "toxicity_findings": "Immune-related hepatitis improved after treatment hold and supportive management."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "response",
+        "patient_state": "treatment_toxicity_improved",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "toxicity_improved",
+          "tumor_response_present",
+          "no_emergency_complication",
+          "modified_or_cautious_continuation_reasonable"
+        ]
+      }
+    }
+  ]
+}

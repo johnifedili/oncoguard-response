@@ -1,0 +1,189 @@
+{
+  "trajectory_id": "OGR_TRJ_010",
+  "schema_version": "1.1",
+  "trajectory_title": "Anchoring reversal after initial response signal",
+  "failure_being_tested": "initial response should not anchor later management when new evidence supports reversal to progression-driven switching",
+  "authorization_dependency": [
+    "updated_imaging",
+    "progression_evidence_review",
+    "comparison_to_prior_response"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Designed to test whether a system can reverse an earlier continuation stance after new progression evidence appears."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic breast cancer",
+    "subtype": "triple-negative breast cancer",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "Sacituzumab govitecan",
+    "line_of_therapy": "later-line",
+    "treatment_class": [
+      "antibody-drug conjugate"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": false,
+    "discordance": true,
+    "missing_evidence": false,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": true
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient has improved pain and imaging shows decreased size of several metastatic lesions after treatment.",
+        "subjective_findings": [
+          "Bone pain improved",
+          "Energy slightly improved",
+          "No new neurologic symptoms"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Clinically stable"
+        ],
+        "labs": "CBC and CMP acceptable for treatment.",
+        "imaging": "Restaging CT shows decreased size of several lung and liver lesions.",
+        "toxicity_findings": "No severe toxicity identified."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [
+        "early_response_signal"
+      ],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "response",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "tumor_response_present",
+          "no_uncontrolled_severe_toxicity",
+          "no_emergency_complication"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "At the next visit, the patient still feels better, but tumor marker begins rising and one lesion is larger. The findings are concerning but not yet sufficient to confirm progression.",
+        "subjective_findings": [
+          "Pain remains improved",
+          "Patient feels treatment is still helping"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "No acute instability"
+        ],
+        "labs": "Tumor marker has increased compared with prior response assessment.",
+        "imaging": "One liver lesion is larger, while several prior lesions remain smaller than baseline.",
+        "toxicity_findings": "No severe toxicity identified."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [
+        "confirmatory_progression_assessment"
+      ],
+      "narrative_pressures": [
+        "prior_response_anchor",
+        "subjective_improvement"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "confirmatory_assessment"
+        ],
+        "delayed_expected_data": [
+          "short_interval_repeat_imaging"
+        ],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "indeterminate_cancer_state",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "contradictory_evidence",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "prior_response_anchor_present",
+          "contradictory_findings",
+          "progression_not_yet_sufficiently_supported",
+          "escalate_when_evidence_insufficient"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "Short-interval repeat imaging now shows growth in multiple lesions and a new adrenal lesion, confirming progression despite the earlier response.",
+        "subjective_findings": [
+          "Pain is still tolerable",
+          "No acute instability"
+        ],
+        "objective_findings": [
+          "ECOG 1"
+        ],
+        "labs": "Tumor marker continues to rise.",
+        "imaging": "Repeat CT shows growth in multiple liver lesions and a new adrenal lesion.",
+        "toxicity_findings": "No severe toxicity requiring treatment hold."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [
+        "prior_response_anchor"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "progression",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "switch_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_progression_evidence",
+          "new_lesion_present",
+          "multiple_lesions_growing",
+          "reversal_from_prior_response_required",
+          "no_higher_priority_emergency"
+        ]
+      }
+    }
+  ]
+}

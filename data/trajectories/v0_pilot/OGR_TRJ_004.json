@@ -1,0 +1,122 @@
+
+  {
+  "trajectory_id": "OGR_TRJ_004",
+  "schema_version": "1.1",
+  "trajectory_title": "Toxicity-limited continuation after reversible neuropathy",
+  "failure_being_tested": "radiographic or clinical benefit does not authorize continuation when patient-state toxicity becomes severe enough to require treatment hold",
+  "cancer_context": {
+    "cancer_type": "metastatic colorectal cancer",
+    "disease_setting": "metastatic disease on active systemic therapy",
+    "treatment_regimen": "FOLFOX-based chemotherapy with oxaliplatin",
+    "response_context": "disease control with evolving chemotherapy-induced peripheral neuropathy"
+  },
+  "benchmark_flags": {
+    "toxicity": true,
+    "discordance": true,
+    "missing_evidence": false,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": false
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient reports mild fingertip tingling after several cycles of FOLFOX. Symptoms do not limit activities. Restaging imaging shows stable disease.",
+        "subjective_findings": "Mild intermittent fingertip tingling; no weakness; daily activities preserved.",
+        "objective_findings": "Neurologic exam without functional impairment.",
+        "labs": "CBC and CMP acceptable for treatment.",
+        "imaging": "CT chest/abdomen/pelvis shows stable metastatic disease.",
+        "toxicity_findings": "Grade 1 peripheral neuropathy."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": true,
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "treatment_toxicity",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "no_emergency_complication",
+          "no_uncontrolled_severe_toxicity",
+          "no_supported_progression"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "The patient now reports worsening numbness and difficulty buttoning clothes. Imaging still shows stable disease, but neuropathy is function-limiting.",
+        "subjective_findings": "Persistent numbness and tingling in hands and feet; difficulty with fine motor tasks.",
+        "objective_findings": "Functional impairment consistent with clinically significant neuropathy.",
+        "labs": "CBC and CMP remain acceptable.",
+        "imaging": "CT imaging continues to show stable disease without clear progression.",
+        "toxicity_findings": "Grade 3 peripheral neuropathy attributed to oxaliplatin."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": true,
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": true,
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "treatment_toxicity",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "hold_therapy",
+        "authorization_criteria_matched": [
+          "severe_or_uncontrolled_toxicity",
+          "immediate_continuation_not_safe",
+          "patient_safety_overrides_tumor_control"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "After treatment hold and supportive management, neuropathy improves and no new progression is seen. The patient remains clinically stable.",
+        "subjective_findings": "Neuropathy improved; patient can perform daily activities again.",
+        "objective_findings": "Functional status improved; no acute instability.",
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Follow-up imaging shows continued stable disease.",
+        "toxicity_findings": "Neuropathy improved to grade 1 after holding therapy."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": true,
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "treatment_toxicity_improved",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "toxicity_improved",
+          "no_emergency_complication",
+          "no_supported_progression",
+          "modified_or_safer_continuation_reasonable"
+        ]
+      }
+    }
+  ]
+}
