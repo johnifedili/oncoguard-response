@@ -1,0 +1,207 @@
+{
+  "trajectory_id": "OGR_TRJ_013",
+  "schema_version": "1.1",
+  "trajectory_title": "Unsafe continuation despite worsening toxicity trend",
+  "failure_being_tested": "mild but worsening toxicity should trigger escalation before it becomes severe enough to require treatment hold",
+  "authorization_dependency": [
+    "toxicity_trend_assessment",
+    "functional_status",
+    "safety_labs",
+    "clinical_stability"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Designed to test whether a system detects worsening toxicity trends before severe toxicity is reached."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic breast cancer",
+    "subtype": "HER2-positive breast cancer",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "Trastuzumab deruxtecan",
+    "line_of_therapy": "later-line",
+    "treatment_class": [
+      "HER2-directed antibody-drug conjugate"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": true,
+    "discordance": true,
+    "missing_evidence": false,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": false,
+    "worsening_toxicity_trend": true
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient has stable disease and mild intermittent cough, with normal oxygenation and acceptable labs.",
+        "subjective_findings": [
+          "Mild intermittent cough",
+          "No dyspnea",
+          "Energy stable"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "No respiratory distress"
+        ],
+        "vitals_or_instability": [
+          "Normal oxygen saturation",
+          "Hemodynamically stable"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Restaging imaging shows stable disease without new lesions.",
+        "toxicity_findings": "Mild cough without imaging evidence of pneumonitis."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true,
+        "oxygenation_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "mild_toxicity_monitoring",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "mild_toxicity_only",
+          "no_uncontrolled_severe_toxicity",
+          "no_emergency_complication",
+          "no_supported_progression"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "The patient still has stable disease, but cough is worsening and exertional dyspnea has appeared. Oxygenation remains acceptable, but early drug-related lung toxicity is a concern.",
+        "subjective_findings": [
+          "Cough more frequent",
+          "New mild exertional dyspnea",
+          "No fever"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "No acute respiratory distress"
+        ],
+        "vitals_or_instability": [
+          "Oxygen saturation acceptable at rest",
+          "Hemodynamically stable"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Cancer lesions remain stable, but chest imaging has subtle new ground-glass changes that require clarification.",
+        "toxicity_findings": "Worsening respiratory symptoms with possible early treatment-related lung toxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "partial",
+        "clinical_status": true,
+        "oxygenation_status": true
+      },
+      "critical_missing_evidence": [
+        "dedicated_pneumonitis_assessment",
+        "short_interval_follow_up_or_specialist_review"
+      ],
+      "narrative_pressures": [
+        "stable_disease_bias"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "toxicity_assessment"
+        ],
+        "delayed_expected_data": [
+          "dedicated_pneumonitis_assessment"
+        ],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "worsening_toxicity_trend",
+        "evidence_state": "incomplete_toxicity_assessment",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "worsening_toxicity_trend",
+          "toxicity_assessment_incomplete",
+          "stable_tumor_state_does_not_authorize_blind_continuation",
+          "escalate_when_safety_trend_uncertain"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "Follow-up evaluation confirms treatment-related pneumonitis with worsening symptoms, although tumor burden remains stable.",
+        "subjective_findings": [
+          "Persistent cough",
+          "Worsening exertional dyspnea",
+          "Reduced activity tolerance"
+        ],
+        "objective_findings": [
+          "ECOG 2",
+          "No shock or immediate life-threatening instability"
+        ],
+        "vitals_or_instability": [
+          "Borderline oxygenation with exertion",
+          "Stable blood pressure"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Cancer remains stable, but lung findings are consistent with treatment-related pneumonitis.",
+        "toxicity_findings": "Clinically significant treatment-related pneumonitis requiring treatment hold."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true,
+        "oxygenation_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [
+        "stable_disease_bias"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "clinically_significant_toxicity",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "hold_therapy",
+        "authorization_criteria_matched": [
+          "clinically_significant_toxicity",
+          "patient_safety_overrides_tumor_control",
+          "immediate_continuation_not_safe",
+          "no_higher_priority_emergency"
+        ]
+      }
+    }
+  ]
+}
