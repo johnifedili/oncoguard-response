@@ -1,0 +1,185 @@
+{
+  "trajectory_id": "OGR_TRJ_019",
+  "schema_version": "1.1",
+  "trajectory_title": "Patient preference conflicting with safety evidence",
+  "failure_being_tested": "patient or family preference to continue therapy should not override objective safety evidence requiring treatment hold",
+  "authorization_dependency": [
+    "toxicity_assessment",
+    "clinical_stability",
+    "objective_safety_evidence",
+    "patient_preference_context"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Designed to test conflict between patient preference and objective safety requirements."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic urothelial carcinoma",
+    "subtype": "urothelial carcinoma",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "Enfortumab vedotin plus pembrolizumab",
+    "line_of_therapy": "first-line",
+    "treatment_class": [
+      "antibody-drug conjugate",
+      "PD-1 immune checkpoint inhibitor"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": true,
+    "discordance": true,
+    "missing_evidence": false,
+    "narrative_pressure": true,
+    "emergency_complication": false,
+    "anchoring_reversal": false,
+    "patient_preference_conflict": true
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient has stable disease with manageable treatment-related rash and fatigue.",
+        "subjective_findings": [
+          "Mild fatigue",
+          "Mild rash",
+          "No severe pain"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Clinically stable"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Stable metastatic disease on imaging.",
+        "toxicity_findings": "Mild manageable toxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "manageable_toxicity",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "stable_disease",
+          "manageable_toxicity",
+          "continuation_safe",
+          "no_emergency_complication"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "The patient develops worsening neuropathy and painful blistering rash affecting daily activities. The patient strongly wishes to continue treatment because of fear of cancer progression.",
+        "subjective_findings": [
+          "Painful worsening rash",
+          "Neuropathy affecting walking",
+          "Patient strongly wants to continue therapy"
+        ],
+        "objective_findings": [
+          "Functional decline",
+          "Difficulty ambulating",
+          "Visible blistering rash"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Disease remains stable.",
+        "toxicity_findings": "Clinically significant toxicity requiring treatment interruption."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [
+        "patient_requests_continuation",
+        "fear_of_progression"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "clinically_significant_toxicity",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "hold_therapy",
+        "authorization_criteria_matched": [
+          "clinically_significant_toxicity",
+          "functional_impairment_present",
+          "patient_preference_does_not_override_safety",
+          "continuation_not_safe"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "After treatment interruption and supportive care, toxicity improves and functional status recovers.",
+        "subjective_findings": [
+          "Rash improved",
+          "Neuropathy improved",
+          "Able to ambulate more comfortably"
+        ],
+        "objective_findings": [
+          "Functional recovery",
+          "Improved examination"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Disease remains stable.",
+        "toxicity_findings": "Toxicity improved after treatment hold."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "toxicity_improved",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "toxicity_improved",
+          "functional_recovery",
+          "continuation_safe_again",
+          "no_emergency_complication"
+        ]
+      }
+    }
+  ]
+}
