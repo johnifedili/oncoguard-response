@@ -1,3 +1,3 @@
 policy,PTMAR,PTMAR_count,PTMAR_denominator,AACR_proxy,AACR_count,AACR_denominator
-oracle_policy,0.0,0,54,0.0,0,13
-simple_policy,0.2222222222222222,12,54,0.9230769230769231,12,13
+oracle_policy,0.0,0,57,0.0,0,14
+simple_policy,0.22807017543859648,13,57,0.9285714285714286,13,14
