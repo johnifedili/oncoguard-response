@@ -1,0 +1,4 @@
+filename,expected_path,exists
+trajectory_inventory_v0_20.csv,/content/drive/MyDrive/oncoguard-response/results/freeze_v0_20_pilot/trajectory_inventory_v0_20.csv,True
+failure_taxonomy_v0_20.csv,/content/drive/MyDrive/oncoguard-response/results/freeze_v0_20_pilot/failure_taxonomy_v0_20.csv,True
+results_v0_20.md,/content/drive/MyDrive/oncoguard-response/results/freeze_v0_20_pilot/results_v0_20.md,True

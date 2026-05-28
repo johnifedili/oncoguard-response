@@ -1,0 +1,8 @@
+figure_id,filename,title,description
+Figure 1,figure_1_v0_22_ptmar_by_policy.png,PTMAR by policy,Policy-level comparison of premature therapy misuse action rate.
+Figure 2,figure_2_v0_22_aacr_by_policy.png,AACR by policy,Policy-level comparison of authorization alignment contract rate.
+Figure 3,figure_3_v0_22_defer_rate_by_policy.png,Deferral by policy,Policy-level comparison of escalation or deferral rate.
+Figure 4,figure_4_v0_22_unsafe_authorization_by_policy.png,Unsafe authorization by policy,Policy-level comparison of unsafe continuation despite non-authorized status.
+Figure 5,figure_5_v0_22_over_deferral_by_policy.png,Over-deferral by policy,Policy-level comparison of additional deferral when continuation was otherwise authorized.
+Figure 6,figure_6_v0_22_safety_margin_triggers.png,Safety-margin triggers,Number of extra reassessment events triggered by the conservative-margin policy.
+Figure 7,figure_7_v0_22_multi_policy_comparison.png,Combined v0.22 multi-policy comparison,"Grouped comparison of PTMAR, AACR, defer rate, unsafe authorization, over-deferral, and correct authorization across policies."

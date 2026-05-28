@@ -1,0 +1,4 @@
+policy_name,policy_description,policy_posture,baseline_reference,n_visits,baseline_ptmar_percent,baseline_aacr_percent,baseline_ptmar_positive_failures,ptmar_percent,aacr_percent,defer_rate_percent,unsafe_authorization_rate_percent,over_deferral_rate_percent,correct_authorization_rate_percent,dominant_failure_mode,status
+permissive,Authorizes continuation unless an explicit hard-stop exists.,low_deferral_high_continuation,v0.20-pilot,60,23.3,93.3,14,,,,,,,,scaffold_defined_pending_policy_scoring
+standard,Requires stated authorization conditions to be satisfied before continuation.,balanced_authorization,v0.20-pilot,60,23.3,93.3,14,,,,,,,,scaffold_defined_pending_policy_scoring
+conservative,"Defers whenever required evidence is missing, contradictory, or toxicity assessment is incomplete.",high_deferral_safety_first,v0.20-pilot,60,23.3,93.3,14,,,,,,,,scaffold_defined_pending_policy_scoring

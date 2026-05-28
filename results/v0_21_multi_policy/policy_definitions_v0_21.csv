@@ -1,0 +1,4 @@
+policy_name,policy_description,policy_posture
+permissive,Authorizes continuation unless an explicit hard-stop exists.,low_deferral_high_continuation
+standard,Requires stated authorization conditions to be satisfied before continuation.,balanced_authorization
+conservative,"Defers whenever required evidence is missing, contradictory, or toxicity assessment is incomplete.",high_deferral_safety_first

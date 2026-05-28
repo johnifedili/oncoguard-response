@@ -1,0 +1,4 @@
+policy_name,n_policy_visit_evaluations,ptmar_percent,aacr_percent,defer_rate_percent,unsafe_authorization_rate_percent,over_deferral_rate_percent,correct_authorization_rate_percent,safety_margin_trigger_count,dominant_failure_mode
+permissive,60,26.7,73.3,0.0,26.7,0.0,73.3,0,unresolved_needs_more_evidence
+standard,60,0.0,100.0,26.7,0.0,0.0,100.0,0,none_observed
+conservative_margin,60,0.0,88.3,38.3,0.0,11.7,88.3,7,none_observed
