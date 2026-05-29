@@ -1,0 +1,4 @@
+display_model_name,model_name,n,schema_conformance_percent,aacr_percent,ptmar_percent,unsafe_authorization_percent,defer_rate_percent,over_deferral_percent,over_hold_percent,over_emergency_percent,over_switch_percent,dominant_error_type,model_slug
+GPT-4o-mini,gpt-4o-mini,60,100.0,40.0,0.0,0.0,56.7,23.3,15.0,6.7,3.3,over_deferral_when_continuation_authorized,
+GPT-4.1,gpt-4.1,60,100.0,46.7,0.0,0.0,70.0,35.0,0.0,5.0,3.3,over_deferral_when_continuation_authorized,gpt41
+Claude Sonnet 4.6,claude-sonnet-4-6,60,86.7,38.3,0.0,0.0,70.0,35.0,6.7,6.7,1.7,over_deferral_when_continuation_authorized,claude_sonnet46

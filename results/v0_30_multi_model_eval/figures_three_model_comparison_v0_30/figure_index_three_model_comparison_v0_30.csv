@@ -1,0 +1,6 @@
+figure_id,filename,title,description
+Figure 1,figure_1_three_model_metric_comparison_v0_30.png,Three-model metric comparison,"Side-by-side comparison of schema conformance, AACR, PTMAR, unsafe authorization, deferral, and over-action metrics."
+Figure 2,figure_2_three_model_error_comparison_v0_30.png,Three-model error taxonomy comparison,"Comparison of error-type counts across GPT-4o-mini, GPT-4.1, and Claude Sonnet 4.6."
+Figure 3,figure_3_three_model_selected_action_comparison_v0_30.png,Selected action distribution comparison,Comparison of selected therapeutic authorization actions across the three models.
+Figure 4,figure_4_three_model_continuation_authorized_behavior_v0_30.png,Continuation-authorized behavior comparison,Comparison of model-selected actions specifically on visits where continuation was expected.
+Figure 5,figure_5_three_model_schema_vs_aacr_v0_30.png,Schema conformance versus AACR,Visualization of deployment-format reliability versus authorization alignment.
