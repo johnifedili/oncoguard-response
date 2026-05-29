@@ -1,0 +1,2 @@
+model_name,model_slug,n,schema_conformance_percent,aacr_percent,ptmar_percent,unsafe_authorization_percent,defer_rate_percent,over_deferral_percent,over_hold_percent,over_emergency_percent,over_switch_percent,dominant_error_type
+gpt-4.1,gpt41,60,100.0,46.7,0.0,0.0,70.0,35.0,0.0,5.0,3.3,over_deferral_when_continuation_authorized

@@ -1,0 +1,7 @@
+error_type,GPT-4.1,GPT-4o-mini
+correct_authorization,28.0,24.0
+over_deferral_when_continuation_authorized,21.0,14.0
+under_action_escalation_instead_of_definitive_safety_action,6.0,7.0
+over_hold_when_continuation_authorized,0.0,9.0
+over_emergency_management,3.0,4.0
+over_switch_or_premature_switch,2.0,2.0

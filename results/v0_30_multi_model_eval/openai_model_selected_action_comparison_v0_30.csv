@@ -1,0 +1,6 @@
+selected_action,GPT-4.1,GPT-4o-mini
+continue_therapy,4,3
+escalate_evaluation,42,34
+hold_therapy,4,13
+switch_therapy,5,4
+emergency_toxicity_management,5,6
