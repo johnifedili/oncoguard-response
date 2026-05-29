@@ -1,0 +1,5 @@
+figure_id,filename,title,description
+Figure 1,figure_1_gpt4omini_v0_30_metric_summary.png,GPT-4o-mini metric summary,"Summary of schema conformance, AACR, PTMAR, unsafe authorization, deferral, and over-action metrics."
+Figure 2,figure_2_gpt4omini_v0_30_selected_action_distribution.png,Selected action distribution,Distribution of actions selected by GPT-4o-mini across 60 visit-level prompts.
+Figure 3,figure_3_gpt4omini_v0_30_error_taxonomy.png,Error taxonomy,Counts of correct authorizations and model error categories.
+Figure 4,figure_4_gpt4omini_v0_30_expected_vs_selected_matrix.png,Expected vs selected action matrix,Cross-tabulation of benchmark expected actions against GPT-4o-mini selected actions.

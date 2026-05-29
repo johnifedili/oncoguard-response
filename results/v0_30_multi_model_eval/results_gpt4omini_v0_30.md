@@ -2,15 +2,19 @@
 
 ## Overview
 
-This analysis reports the first full model evaluation in the OncoGuard-Response v0.30 multi-model evaluation phase.
+This analysis reports the corrected source-of-truth GPT-4o-mini evaluation for the OncoGuard-Response v0.30 model evaluation phase.
 
-GPT-4o-mini was evaluated on the frozen OncoGuard-Response v0.21 pilot benchmark, consisting of 60 visit-level oncology therapeutic-response authorization decisions derived from 20 multi-visit trajectories.
+GPT-4o-mini was evaluated on the clean OncoGuard-Response v0.24 benchmark, consisting of 20 synthetic oncology therapeutic-response trajectories and 60 visit-level authorization decisions.
 
-## Frozen benchmark reference
+## Benchmark reference
 
-Benchmark tag:
+Benchmark version:
 
-`v0.21-pilot-benchmark`
+`v0.24-clean-20trajectory-benchmark`
+
+Benchmark source file:
+
+`results/v0_24_clean_20trajectory_benchmark/visit_level_policy_inputs_v0_24_adjusted.csv`
 
 Prompt file:
 
@@ -28,6 +32,20 @@ Summary file:
 
 `results/v0_30_multi_model_eval/openai_gpt4omini_summary_v0_30.csv`
 
+Figure directory:
+
+`results/v0_30_multi_model_eval/figures_gpt4omini_v0_30/`
+
+## Model evaluated
+
+| Field | Value |
+|---|---|
+| Model | GPT-4o-mini |
+| Benchmark | v0.24 clean 20-trajectory benchmark |
+| Visit-level decisions | 60 |
+| Prompt format | Structured JSON-only therapeutic authorization prompt |
+| Allowed actions | continue_therapy, escalate_evaluation, hold_therapy, switch_therapy, emergency_toxicity_management |
+
 ## Primary results
 
 | Metric | Result |
@@ -36,9 +54,9 @@ Summary file:
 | AACR | 40.0% |
 | PTMAR | 0.0% |
 | Unsafe authorization | 0.0% |
-| Defer rate | 60.0% |
-| Over-deferral | 25.0% |
-| Over-hold | 13.3% |
+| Defer rate | 56.7% |
+| Over-deferral | 23.3% |
+| Over-hold | 15.0% |
 | Over-emergency management | 6.7% |
 | Over-switch / premature switch | 3.3% |
 
@@ -47,8 +65,8 @@ Summary file:
 | Error type | Count |
 |---|---:|
 | Correct authorization | 24 |
-| Over-deferral when continuation authorized | 15 |
-| Over-hold when continuation authorized | 8 |
+| Over-deferral when continuation authorized | 14 |
+| Over-hold when continuation authorized | 9 |
 | Under-action escalation instead of definitive safety action | 7 |
 | Over-emergency management | 4 |
 | Over-switch or premature switch | 2 |
@@ -57,8 +75,8 @@ Summary file:
 
 | Selected action | Count |
 |---|---:|
-| escalate_evaluation | 36 |
-| hold_therapy | 11 |
+| escalate_evaluation | 34 |
+| hold_therapy | 13 |
 | emergency_toxicity_management | 6 |
 | switch_therapy | 4 |
 | continue_therapy | 3 |
@@ -72,8 +90,8 @@ Among 28 visits where the benchmark expected `continue_therapy`, GPT-4o-mini sel
 | Selected action when continuation was expected | Count |
 |---|---:|
 | continue_therapy | 3 |
-| escalate_evaluation | 15 |
-| hold_therapy | 8 |
+| escalate_evaluation | 14 |
+| hold_therapy | 9 |
 | emergency_toxicity_management | 1 |
 | switch_therapy | 1 |
 
@@ -89,12 +107,18 @@ However, this safety profile came with substantial over-conservatism. The model 
 
 ## Clinical interpretation
 
-The GPT-4o-mini result demonstrates that oncology AI safety cannot be evaluated only by the absence of unsafe continuation. A model may avoid premature therapy authorization while still creating clinically relevant risks through unnecessary deferral, treatment interruption, or escalation.
+The corrected GPT-4o-mini result shows that oncology AI safety cannot be evaluated solely by the absence of unsafe continuation. A model may avoid premature therapy authorization while still creating clinically relevant risks through unnecessary deferral, treatment interruption, or escalation.
 
-This finding supports the central OncoGuard-Response framing: therapeutic-response AI systems should be evaluated not only for unsafe action, but also for authorization calibration across sequential oncology visits.
+This result supports the central OncoGuard-Response framing: therapeutic-response AI systems should be evaluated for authorization calibration across sequential oncology visits, not merely for whether they avoid unsafe continuation.
 
 ## Main takeaway
 
 GPT-4o-mini was highly schema-conformant and avoided unsafe therapeutic continuation, but showed a strong conservative bias. Its dominant failure mode was over-deferral when continuation was authorized.
 
-This first v0.30 model result shows that OncoGuard-Response can phenotype model behavior as more than simply correct or incorrect. It can distinguish unsafe continuation risk from conservative treatment-delay risk.
+This corrected v0.30 result demonstrates that OncoGuard-Response can phenotype oncology AI behavior as more than simply correct or incorrect. It can distinguish unsafe continuation risk from conservative treatment-delay risk.
+
+## Provenance note
+
+This result supersedes earlier exploratory GPT-4o-mini outputs generated before the benchmark integrity correction. Prior 39-row outputs and earlier mismatched 60-row summaries should be treated as exploratory or obsolete.
+
+The source-of-truth result is the GPT-4o-mini evaluation run on the v0.24 clean 20-trajectory / 60-visit benchmark.
