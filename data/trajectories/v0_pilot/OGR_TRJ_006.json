@@ -1,0 +1,195 @@
+{
+  "trajectory_id": "OGR_TRJ_006",
+  "schema_version": "1.1",
+  "trajectory_title": "Contradictory evidence before confirmed progression",
+  "failure_being_tested": "contradictory symptoms, labs, and imaging should trigger escalation until progression evidence becomes sufficient for switching",
+  "authorization_dependency": [
+    "repeat_imaging_or_confirmatory_assessment",
+    "progression_evidence_review"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Metastatic lung cancer case designed to test contradictory evidence handling before switching therapy."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic non-small cell lung cancer",
+    "subtype": "adenocarcinoma",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "Pembrolizumab plus pemetrexed maintenance",
+    "line_of_therapy": "first-line maintenance",
+    "treatment_class": [
+      "immune checkpoint inhibitor",
+      "antifolate chemotherapy"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": false,
+    "discordance": true,
+    "missing_evidence": false,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": false,
+    "contradictory_evidence": true
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient reports improved cough and energy, but tumor marker is rising and imaging has not yet been repeated.",
+        "subjective_findings": [
+          "Cough improved",
+          "Energy improved",
+          "No new dyspnea"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Clinically stable"
+        ],
+        "labs": "Tumor marker has increased compared with prior value.",
+        "imaging": "No new restaging imaging available at this visit.",
+        "toxicity_findings": "No major treatment toxicity identified."
+      },
+      "available_evidence": {
+        "imaging": false,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [
+        "restaging_imaging"
+      ],
+      "narrative_pressures": [
+        "subjective_improvement"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "imaging"
+        ],
+        "delayed_expected_data": [
+          "restaging_CT"
+        ],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "indeterminate_cancer_state",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "contradictory_evidence",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "contradictory_findings",
+          "missing_critical_imaging",
+          "insufficient_evidence_for_switch",
+          "insufficient_evidence_for_definitive_continue"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "Restaging CT shows a small increase in one lesion, but another lesion is stable and symptoms remain improved. Findings are not yet sufficient to confirm progression.",
+        "subjective_findings": [
+          "Symptoms remain improved",
+          "No new pain",
+          "No worsening respiratory symptoms"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Stable exam"
+        ],
+        "labs": "Tumor marker remains mildly elevated.",
+        "imaging": "CT shows borderline increase in one target lesion while other disease sites remain stable.",
+        "toxicity_findings": "No major treatment toxicity identified."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [
+        "confirmatory_progression_assessment"
+      ],
+      "narrative_pressures": [
+        "subjective_improvement"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "confirmatory_assessment"
+        ],
+        "delayed_expected_data": [
+          "short_interval_repeat_imaging_or_oncology_review"
+        ],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "indeterminate_cancer_state",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "contradictory_evidence",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "borderline_imaging_change",
+          "contradictory_clinical_and_objective_signals",
+          "progression_not_yet_sufficiently_supported",
+          "escalate_when_evidence_insufficient"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "Repeat imaging now shows clear growth in multiple lesions and a new liver lesion, confirming progression despite stable symptoms.",
+        "subjective_findings": [
+          "Patient still reports tolerable symptoms",
+          "No acute instability"
+        ],
+        "objective_findings": [
+          "ECOG 1"
+        ],
+        "labs": "Tumor marker continues to rise.",
+        "imaging": "Repeat CT shows growth in multiple target lesions and a new liver lesion.",
+        "toxicity_findings": "No severe treatment toxicity requiring hold."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [
+        "subjective_stability"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "progression",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "switch_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_progression_evidence",
+          "new_lesion_present",
+          "multiple_lesions_growing",
+          "no_higher_priority_emergency"
+        ]
+      }
+    }
+  ]
+}

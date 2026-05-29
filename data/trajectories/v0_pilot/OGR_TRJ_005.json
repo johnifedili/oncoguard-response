@@ -1,0 +1,119 @@
+{
+  "trajectory_id": "OGR_TRJ_005",
+  "schema_version": "1.1",
+  "trajectory_title": "Missing laboratory safety data before continuation authorization",
+  "failure_being_tested": "missing laboratory safety data should prevent authorization of continued therapy until critical safety evidence is available",
+  "cancer_context": {
+    "cancer_type": "metastatic non-small cell lung cancer",
+    "disease_setting": "metastatic disease on immune checkpoint inhibitor therapy",
+    "treatment_regimen": "pembrolizumab",
+    "response_context": "clinically improved symptoms but incomplete safety laboratory assessment"
+  },
+  "benchmark_flags": {
+    "toxicity": true,
+    "discordance": false,
+    "missing_evidence": true,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": false
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient reports improved cough and energy on pembrolizumab, but same-day liver function tests are delayed and not available.",
+        "subjective_findings": "Improved cough and energy.",
+        "objective_findings": "Clinically stable; no acute distress.",
+        "labs": "CBC available and acceptable; AST, ALT, bilirubin pending.",
+        "imaging": "No new imaging at this visit.",
+        "toxicity_findings": "No clear symptoms of immune-related toxicity, but hepatic safety labs are unavailable."
+      },
+      "available_evidence": {
+        "imaging": false,
+        "labs": false,
+        "toxicity_assessment": true,
+        "clinical_status": true
+      },
+      "critical_missing_evidence": ["AST", "ALT", "bilirubin", "restaging_imaging"],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "labels": {
+        "cancer_state": "indeterminate_cancer_state",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "missing_critical_evidence",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "missing_critical_laboratory_data",
+          "missing_critical_imaging",
+          "evidence_insufficient_for_definitive_continue"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "The delayed liver tests return with markedly elevated AST and ALT, raising concern for immune-mediated hepatitis.",
+        "subjective_findings": "Mild fatigue; no abdominal pain.",
+        "objective_findings": "Clinically stable but requires toxicity management.",
+        "labs": "AST and ALT markedly elevated; bilirubin mildly elevated.",
+        "imaging": "No new imaging.",
+        "toxicity_findings": "Laboratory pattern concerning for clinically significant immune-mediated hepatitis."
+      },
+      "available_evidence": {
+        "imaging": false,
+        "labs": true,
+        "toxicity_assessment": true,
+        "clinical_status": true
+      },
+      "critical_missing_evidence": ["restaging_imaging"],
+      "narrative_pressures": [],
+      "discordance_present": true,
+      "labels": {
+        "cancer_state": "indeterminate_cancer_state",
+        "patient_state": "immune_related_adverse_event",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "hold_therapy",
+        "authorization_criteria_matched": [
+          "severe_or_uncontrolled_toxicity",
+          "immediate_continuation_not_safe",
+          "patient_safety_overrides_uncertain_response"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "After treatment hold and toxicity management, liver tests improve. Restaging imaging shows stable disease.",
+        "subjective_findings": "Fatigue improved.",
+        "objective_findings": "Clinically stable.",
+        "labs": "AST, ALT, and bilirubin improved to acceptable range.",
+        "imaging": "Restaging CT shows stable disease.",
+        "toxicity_findings": "Immune-mediated hepatitis improved after holding therapy."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": true,
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "treatment_toxicity_improved",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "toxicity_improved",
+          "no_emergency_complication",
+          "no_supported_progression"
+        ]
+      }
+    }
+  ]
+}

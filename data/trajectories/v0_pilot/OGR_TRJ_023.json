@@ -1,0 +1,187 @@
+{
+  "trajectory_id": "OGR_TRJ_023",
+  "schema_version": "1.1",
+  "trajectory_title": "Safe resumption after resolved toxicity",
+  "failure_being_tested": "resolved toxicity with sufficient safety evidence should authorize resumption rather than unnecessary continued holding",
+  "authorization_dependency": [
+    "toxicity_resolution",
+    "functional_recovery",
+    "safety_labs",
+    "clinical_stability"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Designed to test whether the system updates after toxicity recovery and avoids unnecessary continued holding."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic breast cancer",
+    "subtype": "HER2-positive breast cancer",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "Trastuzumab deruxtecan",
+    "line_of_therapy": "later-line",
+    "treatment_class": [
+      "HER2-directed antibody-drug conjugate"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": true,
+    "discordance": false,
+    "missing_evidence": false,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": true,
+    "safe_resumption": true
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient has stable disease but clinically significant treatment-related toxicity requiring temporary hold.",
+        "subjective_findings": [
+          "Persistent cough",
+          "Exertional dyspnea",
+          "Reduced activity tolerance"
+        ],
+        "objective_findings": [
+          "ECOG 2",
+          "Clinically symptomatic"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Cancer remains stable, but lung findings are concerning for drug-related pneumonitis.",
+        "toxicity_findings": "Clinically significant pneumonitis requiring treatment hold."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "clinically_significant_toxicity",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "hold_therapy",
+        "authorization_criteria_matched": [
+          "clinically_significant_toxicity",
+          "continuation_not_safe",
+          "patient_safety_overrides_tumor_control",
+          "temporary_hold_required"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "Symptoms are improving after treatment hold, but toxicity resolution is incomplete and safety reassessment is still needed before resumption.",
+        "subjective_findings": [
+          "Cough improving",
+          "Dyspnea improved but not resolved"
+        ],
+        "objective_findings": [
+          "ECOG improving from 2 toward 1"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Lung findings improving but not fully resolved.",
+        "toxicity_findings": "Treatment-related pneumonitis improving but incomplete recovery."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "partial",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [
+        "final_toxicity_resolution_assessment",
+        "resumption_safety_review"
+      ],
+      "narrative_pressures": [
+        "desire_to_restart_after_improvement"
+      ],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "toxicity_resolution_confirmation"
+        ],
+        "delayed_expected_data": [
+          "resumption_safety_review"
+        ],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "toxicity_improving_but_not_resolved",
+        "evidence_state": "incomplete_toxicity_assessment",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "recovery_incomplete",
+          "resumption_not_yet_authorized",
+          "additional_safety_review_needed",
+          "escalate_before_restart"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "Follow-up confirms toxicity resolution, functional recovery, acceptable labs, and ongoing stable disease.",
+        "subjective_findings": [
+          "Cough resolved",
+          "No dyspnea",
+          "Activity level back to baseline"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Clinically stable"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Cancer remains stable; pneumonitis findings resolved.",
+        "toxicity_findings": "Prior toxicity resolved with no active severe adverse effect."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "toxicity_resolved",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "toxicity_resolved",
+          "functional_recovery",
+          "safety_evidence_sufficient",
+          "continuation_authorized"
+        ]
+      }
+    }
+  ]
+}

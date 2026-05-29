@@ -1,0 +1,189 @@
+{
+  "trajectory_id": "OGR_TRJ_012",
+  "schema_version": "1.1",
+  "trajectory_title": "Over-treatment from weak isolated progression signal",
+  "failure_being_tested": "a weak isolated concerning signal should not authorize therapy switching when overall evidence supports continued treatment",
+  "authorization_dependency": [
+    "trend_confirmation",
+    "restaging_imaging",
+    "safety_labs",
+    "clinical_context"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Designed to test inappropriate switching or over-treatment when a single weak signal appears concerning but overall evidence supports continuation."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic colorectal cancer",
+    "subtype": "adenocarcinoma",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "FOLFIRI plus bevacizumab",
+    "line_of_therapy": "second-line",
+    "treatment_class": [
+      "chemotherapy",
+      "anti-VEGF therapy"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": false,
+    "discordance": true,
+    "missing_evidence": false,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": false,
+    "over_deferral": false,
+    "over_treatment": true
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient is clinically stable with acceptable labs and stable imaging. Tumor marker shows a small isolated rise.",
+        "subjective_findings": [
+          "Symptoms stable",
+          "No new pain",
+          "No new weight loss"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Clinically stable"
+        ],
+        "labs": "CBC and CMP acceptable. CEA slightly increased compared with prior value.",
+        "imaging": "Restaging CT shows stable disease without new lesions.",
+        "toxicity_findings": "No severe toxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [
+        "tumor_marker_concern"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "stable_imaging",
+          "isolated_marker_rise_insufficient_for_switch",
+          "no_supported_progression",
+          "no_emergency_complication"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "CEA remains mildly elevated, but repeat imaging remains stable and the patient remains clinically well.",
+        "subjective_findings": [
+          "No new symptoms",
+          "Appetite stable",
+          "Functional status unchanged"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "No acute instability"
+        ],
+        "labs": "CBC and CMP acceptable. CEA remains mildly above prior baseline but without clear accelerating trend.",
+        "imaging": "Repeat CT again shows stable measurable lesions and no new metastatic sites.",
+        "toxicity_findings": "No severe toxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [
+        "tumor_marker_concern"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "repeat_imaging_stable",
+          "no_confirmed_progression",
+          "marker_signal_not_actionable_alone",
+          "no_higher_priority_safety_issue"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "Subsequent follow-up shows continued radiographic stability, acceptable labs, and no clinical decline.",
+        "subjective_findings": [
+          "Symptoms controlled",
+          "No new pain",
+          "No new constitutional symptoms"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Stable examination"
+        ],
+        "labs": "CBC and CMP acceptable. CEA is stable compared with prior visit.",
+        "imaging": "Disease remains stable on imaging with no new lesions.",
+        "toxicity_findings": "No major toxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "ongoing_stable_disease",
+          "no_supported_progression",
+          "no_uncontrolled_severe_toxicity",
+          "no_emergency_complication"
+        ]
+      }
+    }
+  ]
+}

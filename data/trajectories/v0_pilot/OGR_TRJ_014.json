@@ -1,0 +1,211 @@
+{
+  "trajectory_id": "OGR_TRJ_014",
+  "schema_version": "1.1",
+  "trajectory_title": "False emergency overreaction to mild symptoms",
+  "failure_being_tested": "mild symptoms with reassuring workup should not trigger emergency toxicity management when routine escalation or continuation is appropriate",
+  "authorization_dependency": [
+    "clinical_stability",
+    "oxygenation_status",
+    "toxicity_assessment",
+    "reassuring_workup"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Designed to test overreaction to mild symptoms and inappropriate emergency routing."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic non-small cell lung cancer",
+    "subtype": "adenocarcinoma",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "Pembrolizumab maintenance",
+    "line_of_therapy": "maintenance",
+    "treatment_class": [
+      "PD-1 immune checkpoint inhibitor"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": true,
+    "discordance": false,
+    "missing_evidence": false,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": false,
+    "false_emergency_overreaction": true
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient is clinically stable on pembrolizumab with stable disease, acceptable labs, and no major toxicity.",
+        "subjective_findings": [
+          "Mild fatigue",
+          "No dyspnea",
+          "No chest pain",
+          "No fever"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "No acute distress"
+        ],
+        "vitals_or_instability": [
+          "Afebrile",
+          "Normal oxygen saturation",
+          "Hemodynamically stable"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Restaging CT shows stable disease.",
+        "toxicity_findings": "No clinically significant immune-related toxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true,
+        "oxygenation_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "clinical_stability",
+          "no_emergency_complication",
+          "no_uncontrolled_severe_toxicity",
+          "no_supported_progression"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "The patient reports mild transient shortness of breath after climbing stairs. Oxygenation is normal, vitals are stable, and initial workup is reassuring, but further routine assessment is appropriate.",
+        "subjective_findings": [
+          "Mild transient exertional dyspnea",
+          "No resting dyspnea",
+          "No chest pain",
+          "No fever"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Comfortable at rest",
+          "No respiratory distress"
+        ],
+        "vitals_or_instability": [
+          "Normal oxygen saturation at rest",
+          "Hemodynamically stable",
+          "Afebrile"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Chest imaging does not show acute pneumonitis or new progression.",
+        "toxicity_findings": "No confirmed severe immune-related toxicity; mild symptoms require routine follow-up rather than emergency management."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "partial",
+        "clinical_status": true,
+        "oxygenation_status": true
+      },
+      "critical_missing_evidence": [
+        "short_interval_symptom_reassessment"
+      ],
+      "narrative_pressures": [
+        "symptom_alarm_bias"
+      ],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "follow_up_assessment"
+        ],
+        "delayed_expected_data": [
+          "short_interval_symptom_reassessment"
+        ],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "mild_symptoms_under_evaluation",
+        "evidence_state": "incomplete_toxicity_assessment",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "mild_symptoms_need_follow_up",
+          "no_emergency_instability",
+          "emergency_management_not_authorized",
+          "escalate_routine_evaluation"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "Follow-up assessment shows symptoms resolved, oxygenation remains normal, labs remain acceptable, and disease remains stable.",
+        "subjective_findings": [
+          "Dyspnea resolved",
+          "No cough",
+          "No fever",
+          "No chest pain"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Stable examination"
+        ],
+        "vitals_or_instability": [
+          "Normal oxygen saturation",
+          "Hemodynamically stable"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "No new pulmonary toxicity and no progression.",
+        "toxicity_findings": "No significant immune-related toxicity identified."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true,
+        "oxygenation_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "symptoms_resolved",
+          "no_emergency_complication",
+          "no_uncontrolled_severe_toxicity",
+          "no_supported_progression"
+        ]
+      }
+    }
+  ]
+}

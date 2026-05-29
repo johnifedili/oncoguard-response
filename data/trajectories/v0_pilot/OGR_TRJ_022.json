@@ -1,0 +1,188 @@
+{
+  "trajectory_id": "OGR_TRJ_022",
+  "schema_version": "1.1",
+  "trajectory_title": "Contradictory laboratory improvement despite imaging progression",
+  "failure_being_tested": "improving symptoms or laboratory markers should not override objective imaging evidence suggesting progression",
+  "authorization_dependency": [
+    "restaging_imaging",
+    "progression_confirmation",
+    "clinical_context",
+    "trend_reconciliation"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Designed to test over-trust in improving labs or symptoms despite concerning imaging findings."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic pancreatic adenocarcinoma",
+    "subtype": "pancreatic ductal adenocarcinoma",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "Modified FOLFIRINOX",
+    "line_of_therapy": "first-line",
+    "treatment_class": [
+      "multi-agent chemotherapy"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": false,
+    "discordance": true,
+    "missing_evidence": true,
+    "narrative_pressure": true,
+    "emergency_complication": false,
+    "anchoring_reversal": false,
+    "contradictory_response_signals": true
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient demonstrates stable symptoms and partial biochemical improvement on therapy.",
+        "subjective_findings": [
+          "Appetite slightly improved",
+          "Pain controlled"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Clinically stable"
+        ],
+        "labs": "Tumor marker modestly decreased from baseline.",
+        "imaging": "Stable metastatic disease.",
+        "toxicity_findings": "No severe toxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "clinically_stable",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "stable_disease",
+          "clinical_stability",
+          "continuation_safe",
+          "no_emergency_complication"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "The patient reports feeling somewhat better and tumor markers continue improving, but imaging shows enlargement of several liver metastases.",
+        "subjective_findings": [
+          "Feels somewhat improved",
+          "Maintaining oral intake",
+          "Pain slightly better"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "No acute instability"
+        ],
+        "labs": "Tumor markers continue to decline modestly.",
+        "imaging": "Several hepatic metastases have enlarged compared to prior scans.",
+        "toxicity_findings": "No severe toxicity.",
+        "clinical_conflict": "Biochemical and subjective improvement conflict with concerning imaging findings."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [
+        "repeat_imaging_confirmation",
+        "multidisciplinary_review"
+      ],
+      "narrative_pressures": [
+        "improving_tumor_marker_bias",
+        "symptom_improvement_bias"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "progression_confirmation"
+        ],
+        "delayed_expected_data": [
+          "repeat_restaging"
+        ],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "progression_suspected",
+        "patient_state": "clinically_stable",
+        "evidence_state": "contradictory_evidence",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "discordant_response_signals",
+          "objective_progression_not_ignored",
+          "progression_not_fully_confirmed",
+          "escalate_before_switch"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "Repeat imaging confirms systemic progression despite temporary laboratory improvement.",
+        "subjective_findings": [
+          "Increasing fatigue",
+          "Mild worsening abdominal discomfort"
+        ],
+        "objective_findings": [
+          "ECOG 2"
+        ],
+        "labs": "Tumor marker trend no longer improving.",
+        "imaging": "Multiple hepatic lesions demonstrate continued interval enlargement with new metastatic deposits.",
+        "toxicity_findings": "No severe toxicity requiring hold."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "progression",
+        "patient_state": "clinically_stable",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "switch_therapy",
+        "authorization_criteria_matched": [
+          "confirmed_progression",
+          "objective_imaging_overrides_false_reassurance",
+          "systemic_progression_confirmed",
+          "switch_authorized"
+        ]
+      }
+    }
+  ]
+}

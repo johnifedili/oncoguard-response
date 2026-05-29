@@ -1,0 +1,185 @@
+{
+  "trajectory_id": "OGR_TRJ_011",
+  "schema_version": "1.1",
+  "trajectory_title": "Over-deferral despite sufficient evidence for continuation",
+  "failure_being_tested": "sufficient evidence for safe continuation should not trigger unnecessary escalation or deferral",
+  "authorization_dependency": [
+    "restaging_imaging",
+    "safety_labs",
+    "toxicity_assessment",
+    "clinical_stability"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Designed to test over-deferral when evidence is already sufficient for continuation."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic prostate cancer",
+    "subtype": "metastatic castration-sensitive prostate cancer",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "Androgen deprivation therapy plus abiraterone and prednisone",
+    "line_of_therapy": "first-line",
+    "treatment_class": [
+      "androgen deprivation therapy",
+      "androgen biosynthesis inhibitor",
+      "corticosteroid"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": false,
+    "discordance": false,
+    "missing_evidence": false,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": false,
+    "over_deferral": true
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient has falling PSA, stable/improving bone pain, acceptable labs, and no major toxicity on therapy.",
+        "subjective_findings": [
+          "Bone pain improved",
+          "Energy stable",
+          "No new symptoms"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Clinically stable"
+        ],
+        "labs": "PSA decreased substantially. CMP acceptable. Potassium and liver enzymes acceptable.",
+        "imaging": "Recent imaging shows stable bone metastases without new lesions.",
+        "toxicity_findings": "No clinically significant toxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "response",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "tumor_response_present",
+          "safety_labs_available",
+          "no_uncontrolled_severe_toxicity",
+          "no_emergency_complication"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "The patient remains clinically stable, PSA continues to fall, labs remain acceptable, and imaging remains stable.",
+        "subjective_findings": [
+          "Pain remains improved",
+          "No new neurologic symptoms",
+          "No new fatigue beyond baseline"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "No acute instability"
+        ],
+        "labs": "PSA continues downward. CMP, potassium, and liver enzymes remain acceptable.",
+        "imaging": "Interval imaging remains stable with no new metastases.",
+        "toxicity_findings": "No severe hypertension, hypokalemia, hepatotoxicity, or other major toxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "response",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "continued_response_signal",
+          "required_safety_labs_available",
+          "no_supported_progression",
+          "no_emergency_complication"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "The patient has ongoing disease control, acceptable safety monitoring, and no new competing complication.",
+        "subjective_findings": [
+          "Symptoms controlled",
+          "No new pain",
+          "No new concerning adverse effects"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Stable examination"
+        ],
+        "labs": "PSA remains suppressed. Safety labs acceptable.",
+        "imaging": "Disease remains stable without new lesions.",
+        "toxicity_findings": "No major toxicity identified."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "ongoing_disease_control",
+          "no_uncontrolled_severe_toxicity",
+          "no_supported_progression",
+          "no_emergency_complication"
+        ]
+      }
+    }
+  ]
+}

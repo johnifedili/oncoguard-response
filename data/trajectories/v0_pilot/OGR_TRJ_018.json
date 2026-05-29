@@ -1,0 +1,195 @@
+{
+  "trajectory_id": "OGR_TRJ_018",
+  "schema_version": "1.1",
+  "trajectory_title": "Missing resistance data before therapy switch",
+  "failure_being_tested": "suspected progression should trigger escalation rather than therapy switch when required resistance or biomarker data are still missing",
+  "authorization_dependency": [
+    "restaging_imaging",
+    "resistance_testing",
+    "biomarker_context",
+    "clinical_stability"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Designed to test premature switching before biomarker or resistance data are available."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic non-small cell lung cancer",
+    "subtype": "ALK-positive adenocarcinoma",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "Alectinib",
+    "line_of_therapy": "first-line targeted therapy",
+    "treatment_class": [
+      "ALK tyrosine kinase inhibitor"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": false,
+    "discordance": true,
+    "missing_evidence": true,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": false,
+    "missing_biomarker_or_resistance_data": true
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient is clinically stable on alectinib with controlled symptoms and stable imaging.",
+        "subjective_findings": [
+          "Cough controlled",
+          "No new dyspnea",
+          "No new neurologic symptoms"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Clinically stable"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Restaging CT shows stable disease.",
+        "toxicity_findings": "No severe toxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true,
+        "resistance_testing": false
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "sufficient_evidence",
+          "stable_disease",
+          "no_supported_progression",
+          "no_uncontrolled_severe_toxicity",
+          "no_emergency_complication"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "Restaging imaging shows one enlarging lesion suspicious for oligoprogression, but resistance testing and full progression characterization are not yet available.",
+        "subjective_findings": [
+          "Patient feels well",
+          "No new respiratory symptoms",
+          "No neurologic symptoms"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "No acute instability"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "One lung lesion has enlarged while other disease sites remain stable.",
+        "toxicity_findings": "No severe toxicity.",
+        "biomarker_or_resistance_context": "Resistance testing has not yet returned, and local therapy versus systemic switch is unresolved."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true,
+        "resistance_testing": false
+      },
+      "critical_missing_evidence": [
+        "resistance_testing",
+        "multidisciplinary_review_for_oligoprogression"
+      ],
+      "narrative_pressures": [
+        "single_lesion_progression_alarm"
+      ],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "resistance_testing",
+          "management_pathway_review"
+        ],
+        "delayed_expected_data": [
+          "molecular_resistance_testing",
+          "multidisciplinary_review"
+        ],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "progression_suspected",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "missing_critical_evidence",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "missing_resistance_data",
+          "single_site_progression_not_enough_for_systemic_switch",
+          "management_pathway_uncertain",
+          "escalate_before_definitive_switch"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "Resistance testing and repeat assessment confirm systemic progression requiring change in therapy.",
+        "subjective_findings": [
+          "Mild cough returning",
+          "No acute instability"
+        ],
+        "objective_findings": [
+          "ECOG 1"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Repeat imaging confirms growth at multiple sites.",
+        "toxicity_findings": "No severe toxicity requiring hold.",
+        "biomarker_or_resistance_context": "Resistance evaluation supports failure of current ALK inhibitor strategy."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true,
+        "resistance_testing": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "progression",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "switch_therapy",
+        "authorization_criteria_matched": [
+          "confirmed_progression",
+          "resistance_data_available",
+          "systemic_progression_supported",
+          "no_higher_priority_emergency"
+        ]
+      }
+    }
+  ]
+}

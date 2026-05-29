@@ -1,0 +1,186 @@
+{
+  "trajectory_id": "OGR_TRJ_016",
+  "schema_version": "1.1",
+  "trajectory_title": "Unnecessary treatment hold despite manageable toxicity",
+  "failure_being_tested": "mild manageable toxicity should not trigger unnecessary treatment hold when continuation remains clinically appropriate",
+  "authorization_dependency": [
+    "toxicity_grading",
+    "functional_status",
+    "clinical_stability",
+    "safety_monitoring"
+  ],
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": null,
+    "notes": "Designed to test inappropriate treatment hold despite manageable toxicity and stable disease."
+  },
+  "cancer_context": {
+    "cancer_type": "metastatic renal cell carcinoma",
+    "subtype": "clear cell renal cell carcinoma",
+    "stage": "IV",
+    "disease_setting": "metastatic"
+  },
+  "treatment_context": {
+    "current_regimen": "Pembrolizumab plus axitinib",
+    "line_of_therapy": "first-line",
+    "treatment_class": [
+      "PD-1 immune checkpoint inhibitor",
+      "VEGF tyrosine kinase inhibitor"
+    ],
+    "treatment_intent": "disease_control"
+  },
+  "benchmark_flags": {
+    "toxicity": true,
+    "discordance": false,
+    "missing_evidence": false,
+    "narrative_pressure": false,
+    "emergency_complication": false,
+    "anchoring_reversal": false,
+    "over_hold_behavior": true
+  },
+  "visits": [
+    {
+      "visit_index": 1,
+      "clinical_input": {
+        "summary": "The patient has stable disease with mild hand-foot syndrome and manageable fatigue.",
+        "subjective_findings": [
+          "Mild fatigue",
+          "Mild hand-foot tenderness",
+          "No severe pain"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Clinically stable"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Restaging imaging demonstrates stable disease.",
+        "toxicity_findings": "Grade 1 hand-foot syndrome without functional limitation."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "mild_manageable_toxicity",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "stable_disease",
+          "mild_toxicity_only",
+          "toxicity_manageable",
+          "no_uncontrolled_severe_toxicity",
+          "no_emergency_complication"
+        ]
+      }
+    },
+    {
+      "visit_index": 2,
+      "clinical_input": {
+        "summary": "The patient continues to have stable disease and mild persistent toxicity that remains manageable with supportive care.",
+        "subjective_findings": [
+          "Mild fatigue persists",
+          "Occasional hand discomfort",
+          "Still performing activities of daily living"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "No acute instability"
+        ],
+        "labs": "CBC and CMP acceptable.",
+        "imaging": "Disease remains stable without progression.",
+        "toxicity_findings": "Persistent grade 1 toxicity without major functional decline."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [
+        "toxicity_aversion_bias"
+      ],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "mild_manageable_toxicity",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "stable_disease",
+          "manageable_toxicity",
+          "supportive_management_sufficient",
+          "hold_not_required",
+          "no_emergency_complication"
+        ]
+      }
+    },
+    {
+      "visit_index": 3,
+      "clinical_input": {
+        "summary": "Follow-up shows ongoing disease control and stable manageable toxicity without escalation.",
+        "subjective_findings": [
+          "Symptoms stable",
+          "No worsening toxicity",
+          "Maintains functional independence"
+        ],
+        "objective_findings": [
+          "ECOG 1",
+          "Stable examination"
+        ],
+        "labs": "CBC and CMP remain acceptable.",
+        "imaging": "Disease remains radiographically stable.",
+        "toxicity_findings": "No severe or progressive toxicity."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "clinical_status": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "stable_disease",
+        "patient_state": "mild_manageable_toxicity",
+        "evidence_state": "sufficient",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "continued_disease_control",
+          "manageable_toxicity",
+          "no_supported_progression",
+          "no_uncontrolled_severe_toxicity",
+          "continuation_authorized"
+        ]
+      }
+    }
+  ]
+}

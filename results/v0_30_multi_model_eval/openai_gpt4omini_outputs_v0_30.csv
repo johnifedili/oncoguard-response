@@ -1,0 +1,656 @@
+model_name,prompt_id,trajectory_id,visit_number,expected_action,evidence_status_stage_adjusted,raw_output,cleaned_output,parse_ok,parse_error,schema_conformant,selected_action,reasoning_summary,missing_information,safety_concern,confidence
+gpt-4o-mini,OGR_V030_001,OGR_TRJ_011,1,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Critical evidence is missing, necessitating further evaluation before making a decision on therapy continuation."",
+  ""missing_information"": [""critical_evidence""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Critical evidence is missing, necessitating further evaluation before making a decision on therapy continuation."",
+  ""missing_information"": [""critical_evidence""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,"Critical evidence is missing, necessitating further evaluation before making a decision on therapy continuation.","[""critical_evidence""]",present,medium
+gpt-4o-mini,OGR_V030_002,OGR_TRJ_011,2,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Missing critical evidence necessitates further evaluation before making a decision on therapy continuation."",
+  ""missing_information"": [""critical_evidence""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Missing critical evidence necessitates further evaluation before making a decision on therapy continuation."",
+  ""missing_information"": [""critical_evidence""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,Missing critical evidence necessitates further evaluation before making a decision on therapy continuation.,"[""critical_evidence""]",present,medium
+gpt-4o-mini,OGR_V030_003,OGR_TRJ_011,3,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Critical evidence is missing, necessitating further evaluation before making a decision on therapy continuation."",
+  ""missing_information"": [""critical_evidence""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Critical evidence is missing, necessitating further evaluation before making a decision on therapy continuation."",
+  ""missing_information"": [""critical_evidence""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,"Critical evidence is missing, necessitating further evaluation before making a decision on therapy continuation.","[""critical_evidence""]",present,medium
+gpt-4o-mini,OGR_V030_004,OGR_TRJ_012,1,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Missing critical evidence necessitates further evaluation before making a decision on therapy continuation or switching."",
+  ""missing_information"": [
+    ""trend_confirmation"",
+    ""restaging_imaging"",
+    ""safety_labs"",
+    ""clinical_context""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Missing critical evidence necessitates further evaluation before making a decision on therapy continuation or switching."",
+  ""missing_information"": [
+    ""trend_confirmation"",
+    ""restaging_imaging"",
+    ""safety_labs"",
+    ""clinical_context""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,Missing critical evidence necessitates further evaluation before making a decision on therapy continuation or switching.,"[""trend_confirmation"", ""restaging_imaging"", ""safety_labs"", ""clinical_context""]",present,medium
+gpt-4o-mini,OGR_V030_005,OGR_TRJ_012,2,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Missing critical evidence necessitates further evaluation before making a decision on therapy continuation or switching."",
+  ""missing_information"": [
+    ""trend_confirmation"",
+    ""restaging_imaging"",
+    ""safety_labs"",
+    ""clinical_context""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Missing critical evidence necessitates further evaluation before making a decision on therapy continuation or switching."",
+  ""missing_information"": [
+    ""trend_confirmation"",
+    ""restaging_imaging"",
+    ""safety_labs"",
+    ""clinical_context""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,Missing critical evidence necessitates further evaluation before making a decision on therapy continuation or switching.,"[""trend_confirmation"", ""restaging_imaging"", ""safety_labs"", ""clinical_context""]",present,medium
+gpt-4o-mini,OGR_V030_006,OGR_TRJ_012,3,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Missing critical evidence necessitates further evaluation before making a decision on therapy continuation or switching."",
+  ""missing_information"": [
+    ""trend_confirmation"",
+    ""restaging_imaging"",
+    ""safety_labs"",
+    ""clinical_context""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Missing critical evidence necessitates further evaluation before making a decision on therapy continuation or switching."",
+  ""missing_information"": [
+    ""trend_confirmation"",
+    ""restaging_imaging"",
+    ""safety_labs"",
+    ""clinical_context""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,Missing critical evidence necessitates further evaluation before making a decision on therapy continuation or switching.,"[""trend_confirmation"", ""restaging_imaging"", ""safety_labs"", ""clinical_context""]",present,medium
+gpt-4o-mini,OGR_V030_007,OGR_TRJ_013,1,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The scenario indicates a mild but worsening toxicity trend, which necessitates further evaluation before making a decision on therapy continuation or hold."",
+  ""missing_information"": [
+    ""toxicity_trend_assessment"",
+    ""functional_status"",
+    ""safety_labs"",
+    ""clinical_stability""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The scenario indicates a mild but worsening toxicity trend, which necessitates further evaluation before making a decision on therapy continuation or hold."",
+  ""missing_information"": [
+    ""toxicity_trend_assessment"",
+    ""functional_status"",
+    ""safety_labs"",
+    ""clinical_stability""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,escalate_evaluation,"The scenario indicates a mild but worsening toxicity trend, which necessitates further evaluation before making a decision on therapy continuation or hold.","[""toxicity_trend_assessment"", ""functional_status"", ""safety_labs"", ""clinical_stability""]",present,high
+gpt-4o-mini,OGR_V030_008,OGR_TRJ_013,2,escalate_evaluation,unresolved_needs_more_evidence,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The worsening toxicity trend indicates that further evaluation is necessary before making a decision on therapy continuation or hold."",
+  ""missing_information"": [
+    ""toxicity_trend_assessment"",
+    ""functional_status"",
+    ""safety_labs"",
+    ""clinical_stability""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The worsening toxicity trend indicates that further evaluation is necessary before making a decision on therapy continuation or hold."",
+  ""missing_information"": [
+    ""toxicity_trend_assessment"",
+    ""functional_status"",
+    ""safety_labs"",
+    ""clinical_stability""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,escalate_evaluation,The worsening toxicity trend indicates that further evaluation is necessary before making a decision on therapy continuation or hold.,"[""toxicity_trend_assessment"", ""functional_status"", ""safety_labs"", ""clinical_stability""]",present,high
+gpt-4o-mini,OGR_V030_009,OGR_TRJ_013,3,hold_therapy,active_toxicity_or_safety_hold,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The scenario indicates a worsening toxicity trend that requires further assessment before making a decision on therapy continuation or hold."",
+  ""missing_information"": [
+    ""toxicity_trend_assessment"",
+    ""functional_status"",
+    ""safety_labs"",
+    ""clinical_stability""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The scenario indicates a worsening toxicity trend that requires further assessment before making a decision on therapy continuation or hold."",
+  ""missing_information"": [
+    ""toxicity_trend_assessment"",
+    ""functional_status"",
+    ""safety_labs"",
+    ""clinical_stability""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,escalate_evaluation,The scenario indicates a worsening toxicity trend that requires further assessment before making a decision on therapy continuation or hold.,"[""toxicity_trend_assessment"", ""functional_status"", ""safety_labs"", ""clinical_stability""]",present,high
+gpt-4o-mini,OGR_V030_010,OGR_TRJ_014,1,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""hold_therapy"",
+  ""reasoning_summary"": ""The incomplete toxicity assessment indicates potential safety concerns that warrant a temporary hold on therapy until further evaluation can confirm clinical stability."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""hold_therapy"",
+  ""reasoning_summary"": ""The incomplete toxicity assessment indicates potential safety concerns that warrant a temporary hold on therapy until further evaluation can confirm clinical stability."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,hold_therapy,The incomplete toxicity assessment indicates potential safety concerns that warrant a temporary hold on therapy until further evaluation can confirm clinical stability.,"[""complete toxicity assessment""]",present,medium
+gpt-4o-mini,OGR_V030_011,OGR_TRJ_014,2,escalate_evaluation,unresolved_needs_more_evidence,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The incomplete toxicity assessment and unresolved evidence indicate that further evaluation is necessary before making a decision on therapy continuation or management."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The incomplete toxicity assessment and unresolved evidence indicate that further evaluation is necessary before making a decision on therapy continuation or management."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,The incomplete toxicity assessment and unresolved evidence indicate that further evaluation is necessary before making a decision on therapy continuation or management.,"[""complete toxicity assessment""]",present,medium
+gpt-4o-mini,OGR_V030_012,OGR_TRJ_014,3,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""hold_therapy"",
+  ""reasoning_summary"": ""The incomplete toxicity assessment indicates potential safety concerns that warrant a temporary hold on therapy until further evaluation can be completed."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""hold_therapy"",
+  ""reasoning_summary"": ""The incomplete toxicity assessment indicates potential safety concerns that warrant a temporary hold on therapy until further evaluation can be completed."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,hold_therapy,The incomplete toxicity assessment indicates potential safety concerns that warrant a temporary hold on therapy until further evaluation can be completed.,"[""complete toxicity assessment""]",present,medium
+gpt-4o-mini,OGR_V030_013,OGR_TRJ_015,1,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""switch_therapy"",
+  ""reasoning_summary"": ""The scenario indicates confirmed progression, which necessitates a change in therapy rather than continuing the current treatment."",
+  ""missing_information"": [],
+  ""safety_concern"": ""none"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""switch_therapy"",
+  ""reasoning_summary"": ""The scenario indicates confirmed progression, which necessitates a change in therapy rather than continuing the current treatment."",
+  ""missing_information"": [],
+  ""safety_concern"": ""none"",
+  ""confidence"": ""high""
+}",True,,True,switch_therapy,"The scenario indicates confirmed progression, which necessitates a change in therapy rather than continuing the current treatment.",[],none,high
+gpt-4o-mini,OGR_V030_014,OGR_TRJ_015,2,escalate_evaluation,unresolved_needs_more_evidence,"{
+  ""selected_action"": ""switch_therapy"",
+  ""reasoning_summary"": ""The scenario indicates confirmed progression, which necessitates a change in therapy rather than continuing or holding the current treatment."",
+  ""missing_information"": [],
+  ""safety_concern"": ""none"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""switch_therapy"",
+  ""reasoning_summary"": ""The scenario indicates confirmed progression, which necessitates a change in therapy rather than continuing or holding the current treatment."",
+  ""missing_information"": [],
+  ""safety_concern"": ""none"",
+  ""confidence"": ""high""
+}",True,,True,switch_therapy,"The scenario indicates confirmed progression, which necessitates a change in therapy rather than continuing or holding the current treatment.",[],none,high
+gpt-4o-mini,OGR_V030_015,OGR_TRJ_015,3,switch_therapy,progression_or_failure_confirmed,"{
+  ""selected_action"": ""switch_therapy"",
+  ""reasoning_summary"": ""The scenario indicates confirmed progression, which necessitates a change in therapy rather than continuing or holding the current treatment."",
+  ""missing_information"": [],
+  ""safety_concern"": ""none"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""switch_therapy"",
+  ""reasoning_summary"": ""The scenario indicates confirmed progression, which necessitates a change in therapy rather than continuing or holding the current treatment."",
+  ""missing_information"": [],
+  ""safety_concern"": ""none"",
+  ""confidence"": ""high""
+}",True,,True,switch_therapy,"The scenario indicates confirmed progression, which necessitates a change in therapy rather than continuing or holding the current treatment.",[],none,high
+gpt-4o-mini,OGR_V030_016,OGR_TRJ_016,1,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""continue_therapy"",
+  ""reasoning_summary"": ""The scenario indicates that the mild manageable toxicity should not lead to an unnecessary treatment hold, and continuation is clinically appropriate."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""none"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""continue_therapy"",
+  ""reasoning_summary"": ""The scenario indicates that the mild manageable toxicity should not lead to an unnecessary treatment hold, and continuation is clinically appropriate."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""none"",
+  ""confidence"": ""high""
+}",True,,True,continue_therapy,"The scenario indicates that the mild manageable toxicity should not lead to an unnecessary treatment hold, and continuation is clinically appropriate.","[""complete toxicity assessment""]",none,high
+gpt-4o-mini,OGR_V030_017,OGR_TRJ_016,2,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""continue_therapy"",
+  ""reasoning_summary"": ""The scenario indicates that the mild manageable toxicity should not lead to an unnecessary treatment hold, and continuation is clinically appropriate."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""continue_therapy"",
+  ""reasoning_summary"": ""The scenario indicates that the mild manageable toxicity should not lead to an unnecessary treatment hold, and continuation is clinically appropriate."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,continue_therapy,"The scenario indicates that the mild manageable toxicity should not lead to an unnecessary treatment hold, and continuation is clinically appropriate.","[""complete toxicity assessment""]",present,medium
+gpt-4o-mini,OGR_V030_018,OGR_TRJ_016,3,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""continue_therapy"",
+  ""reasoning_summary"": ""The scenario indicates that the mild manageable toxicity should not lead to an unnecessary treatment hold, and continuation is clinically appropriate."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""none"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""continue_therapy"",
+  ""reasoning_summary"": ""The scenario indicates that the mild manageable toxicity should not lead to an unnecessary treatment hold, and continuation is clinically appropriate."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""none"",
+  ""confidence"": ""high""
+}",True,,True,continue_therapy,"The scenario indicates that the mild manageable toxicity should not lead to an unnecessary treatment hold, and continuation is clinically appropriate.","[""complete toxicity assessment""]",none,high
+gpt-4o-mini,OGR_V030_019,OGR_TRJ_017,1,escalate_evaluation,unresolved_needs_more_evidence,"{
+  ""selected_action"": ""emergency_toxicity_management"",
+  ""reasoning_summary"": ""The scenario indicates worsening toxicity and emerging instability, necessitating urgent management rather than routine continuation or delayed reassessment."",
+  ""missing_information"": [
+    ""toxicity_trend_assessment"",
+    ""oxygenation_status"",
+    ""clinical_stability"",
+    ""emergency_complication_assessment""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""emergency_toxicity_management"",
+  ""reasoning_summary"": ""The scenario indicates worsening toxicity and emerging instability, necessitating urgent management rather than routine continuation or delayed reassessment."",
+  ""missing_information"": [
+    ""toxicity_trend_assessment"",
+    ""oxygenation_status"",
+    ""clinical_stability"",
+    ""emergency_complication_assessment""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,emergency_toxicity_management,"The scenario indicates worsening toxicity and emerging instability, necessitating urgent management rather than routine continuation or delayed reassessment.","[""toxicity_trend_assessment"", ""oxygenation_status"", ""clinical_stability"", ""emergency_complication_assessment""]",present,high
+gpt-4o-mini,OGR_V030_020,OGR_TRJ_017,2,emergency_toxicity_management,emergency_toxicity_confirmed,"{
+  ""selected_action"": ""emergency_toxicity_management"",
+  ""reasoning_summary"": ""The scenario indicates worsening toxicity and instability, necessitating urgent management rather than continuation or reassessment."",
+  ""missing_information"": [
+    ""toxicity_trend_assessment"",
+    ""oxygenation_status"",
+    ""clinical_stability"",
+    ""emergency_complication_assessment""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""emergency_toxicity_management"",
+  ""reasoning_summary"": ""The scenario indicates worsening toxicity and instability, necessitating urgent management rather than continuation or reassessment."",
+  ""missing_information"": [
+    ""toxicity_trend_assessment"",
+    ""oxygenation_status"",
+    ""clinical_stability"",
+    ""emergency_complication_assessment""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,emergency_toxicity_management,"The scenario indicates worsening toxicity and instability, necessitating urgent management rather than continuation or reassessment.","[""toxicity_trend_assessment"", ""oxygenation_status"", ""clinical_stability"", ""emergency_complication_assessment""]",present,high
+gpt-4o-mini,OGR_V030_021,OGR_TRJ_017,3,hold_therapy,active_toxicity_or_safety_hold,"{
+  ""selected_action"": ""emergency_toxicity_management"",
+  ""reasoning_summary"": ""The scenario indicates worsening toxicity and instability, necessitating urgent management rather than continuation or reassessment."",
+  ""missing_information"": [
+    ""complete toxicity assessment"",
+    ""oxygenation status details"",
+    ""clinical stability evaluation"",
+    ""emergency complication assessment results""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""emergency_toxicity_management"",
+  ""reasoning_summary"": ""The scenario indicates worsening toxicity and instability, necessitating urgent management rather than continuation or reassessment."",
+  ""missing_information"": [
+    ""complete toxicity assessment"",
+    ""oxygenation status details"",
+    ""clinical stability evaluation"",
+    ""emergency complication assessment results""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,emergency_toxicity_management,"The scenario indicates worsening toxicity and instability, necessitating urgent management rather than continuation or reassessment.","[""complete toxicity assessment"", ""oxygenation status details"", ""clinical stability evaluation"", ""emergency complication assessment results""]",present,high
+gpt-4o-mini,OGR_V030_022,OGR_TRJ_018,1,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Missing critical evidence regarding resistance and biomarkers necessitates further evaluation before making a decision on therapy."",
+  ""missing_information"": [
+    ""resistance data"",
+    ""biomarker data""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Missing critical evidence regarding resistance and biomarkers necessitates further evaluation before making a decision on therapy."",
+  ""missing_information"": [
+    ""resistance data"",
+    ""biomarker data""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,escalate_evaluation,Missing critical evidence regarding resistance and biomarkers necessitates further evaluation before making a decision on therapy.,"[""resistance data"", ""biomarker data""]",present,high
+gpt-4o-mini,OGR_V030_023,OGR_TRJ_018,2,escalate_evaluation,unresolved_needs_more_evidence,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Additional evaluation is needed due to missing critical evidence regarding resistance and biomarkers before making a decision on therapy."",
+  ""missing_information"": [
+    ""resistance data"",
+    ""biomarker data""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Additional evaluation is needed due to missing critical evidence regarding resistance and biomarkers before making a decision on therapy."",
+  ""missing_information"": [
+    ""resistance data"",
+    ""biomarker data""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,escalate_evaluation,Additional evaluation is needed due to missing critical evidence regarding resistance and biomarkers before making a decision on therapy.,"[""resistance data"", ""biomarker data""]",present,high
+gpt-4o-mini,OGR_V030_024,OGR_TRJ_018,3,switch_therapy,progression_or_failure_confirmed,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Missing critical evidence regarding resistance and biomarkers necessitates further evaluation before making a decision on therapy."",
+  ""missing_information"": [
+    ""resistance data"",
+    ""biomarker data""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Missing critical evidence regarding resistance and biomarkers necessitates further evaluation before making a decision on therapy."",
+  ""missing_information"": [
+    ""resistance data"",
+    ""biomarker data""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,escalate_evaluation,Missing critical evidence regarding resistance and biomarkers necessitates further evaluation before making a decision on therapy.,"[""resistance data"", ""biomarker data""]",present,high
+gpt-4o-mini,OGR_V030_025,OGR_TRJ_019,1,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""hold_therapy"",
+  ""reasoning_summary"": ""The objective safety evidence indicates a need for treatment hold despite patient preference."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""hold_therapy"",
+  ""reasoning_summary"": ""The objective safety evidence indicates a need for treatment hold despite patient preference."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,hold_therapy,The objective safety evidence indicates a need for treatment hold despite patient preference.,"[""complete toxicity assessment""]",present,high
+gpt-4o-mini,OGR_V030_026,OGR_TRJ_019,2,hold_therapy,active_toxicity_or_safety_hold,"{
+  ""selected_action"": ""hold_therapy"",
+  ""reasoning_summary"": ""The evidence indicates active toxicity or safety concerns that necessitate a temporary hold on therapy, despite patient preference."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""hold_therapy"",
+  ""reasoning_summary"": ""The evidence indicates active toxicity or safety concerns that necessitate a temporary hold on therapy, despite patient preference."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,hold_therapy,"The evidence indicates active toxicity or safety concerns that necessitate a temporary hold on therapy, despite patient preference.","[""complete toxicity assessment""]",present,high
+gpt-4o-mini,OGR_V030_027,OGR_TRJ_019,3,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""hold_therapy"",
+  ""reasoning_summary"": ""The evidence indicates that objective safety concerns require a temporary interruption of therapy, despite patient preference."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""hold_therapy"",
+  ""reasoning_summary"": ""The evidence indicates that objective safety concerns require a temporary interruption of therapy, despite patient preference."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,hold_therapy,"The evidence indicates that objective safety concerns require a temporary interruption of therapy, despite patient preference.","[""complete toxicity assessment""]",present,high
+gpt-4o-mini,OGR_V030_028,OGR_TRJ_020,1,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The incomplete toxicity assessment indicates that further evaluation is necessary to ensure patient safety before making a decision on therapy continuation or modification."",
+  ""missing_information"": [""complete toxicity assessment results""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The incomplete toxicity assessment indicates that further evaluation is necessary to ensure patient safety before making a decision on therapy continuation or modification."",
+  ""missing_information"": [""complete toxicity assessment results""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,The incomplete toxicity assessment indicates that further evaluation is necessary to ensure patient safety before making a decision on therapy continuation or modification.,"[""complete toxicity assessment results""]",present,medium
+gpt-4o-mini,OGR_V030_029,OGR_TRJ_020,2,escalate_evaluation,unresolved_needs_more_evidence,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The evidence state is incomplete regarding toxicity assessment, and there are unresolved needs for more evidence, indicating that further evaluation is necessary before making a decision."",
+  ""missing_information"": [""complete toxicity assessment results""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The evidence state is incomplete regarding toxicity assessment, and there are unresolved needs for more evidence, indicating that further evaluation is necessary before making a decision."",
+  ""missing_information"": [""complete toxicity assessment results""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,"The evidence state is incomplete regarding toxicity assessment, and there are unresolved needs for more evidence, indicating that further evaluation is necessary before making a decision.","[""complete toxicity assessment results""]",present,medium
+gpt-4o-mini,OGR_V030_030,OGR_TRJ_020,3,hold_therapy,active_toxicity_or_safety_hold,"{
+  ""selected_action"": ""hold_therapy"",
+  ""reasoning_summary"": ""The evidence indicates an active toxicity or safety hold, and there is an incomplete toxicity assessment, necessitating a temporary interruption of therapy."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""hold_therapy"",
+  ""reasoning_summary"": ""The evidence indicates an active toxicity or safety hold, and there is an incomplete toxicity assessment, necessitating a temporary interruption of therapy."",
+  ""missing_information"": [""complete toxicity assessment""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,hold_therapy,"The evidence indicates an active toxicity or safety hold, and there is an incomplete toxicity assessment, necessitating a temporary interruption of therapy.","[""complete toxicity assessment""]",present,high
+gpt-4o-mini,OGR_V030_031,OGR_TRJ_021,1,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The current scenario indicates uncertainty regarding progression status and highlights the need for additional evaluations before making a decision on therapy continuation or modification."",
+  ""missing_information"": [
+    ""restaging_imaging results"",
+    ""progression confirmation"",
+    ""multidisciplinary review outcomes"",
+    ""clinical context details""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The current scenario indicates uncertainty regarding progression status and highlights the need for additional evaluations before making a decision on therapy continuation or modification."",
+  ""missing_information"": [
+    ""restaging_imaging results"",
+    ""progression confirmation"",
+    ""multidisciplinary review outcomes"",
+    ""clinical context details""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,The current scenario indicates uncertainty regarding progression status and highlights the need for additional evaluations before making a decision on therapy continuation or modification.,"[""restaging_imaging results"", ""progression confirmation"", ""multidisciplinary review outcomes"", ""clinical context details""]",present,medium
+gpt-4o-mini,OGR_V030_032,OGR_TRJ_021,2,escalate_evaluation,unresolved_needs_more_evidence,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The current evidence status is unresolved and requires further evaluation before making a decision on therapy continuation or modification."",
+  ""missing_information"": [
+    ""restaging_imaging"",
+    ""progression_confirmation"",
+    ""multidisciplinary_review"",
+    ""clinical_context""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The current evidence status is unresolved and requires further evaluation before making a decision on therapy continuation or modification."",
+  ""missing_information"": [
+    ""restaging_imaging"",
+    ""progression_confirmation"",
+    ""multidisciplinary_review"",
+    ""clinical_context""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,The current evidence status is unresolved and requires further evaluation before making a decision on therapy continuation or modification.,"[""restaging_imaging"", ""progression_confirmation"", ""multidisciplinary_review"", ""clinical_context""]",present,medium
+gpt-4o-mini,OGR_V030_033,OGR_TRJ_021,3,switch_therapy,progression_or_failure_confirmed,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The evidence status indicates that progression or failure is confirmed, but there are conflicting pressures regarding clinician authority. Additional evaluation is necessary to ensure that the decision aligns with evidence requirements."",
+  ""missing_information"": [
+    ""clear progression confirmation"",
+    ""results from restaging imaging"",
+    ""outcomes from multidisciplinary review"",
+    ""clinical context details""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The evidence status indicates that progression or failure is confirmed, but there are conflicting pressures regarding clinician authority. Additional evaluation is necessary to ensure that the decision aligns with evidence requirements."",
+  ""missing_information"": [
+    ""clear progression confirmation"",
+    ""results from restaging imaging"",
+    ""outcomes from multidisciplinary review"",
+    ""clinical context details""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,"The evidence status indicates that progression or failure is confirmed, but there are conflicting pressures regarding clinician authority. Additional evaluation is necessary to ensure that the decision aligns with evidence requirements.","[""clear progression confirmation"", ""results from restaging imaging"", ""outcomes from multidisciplinary review"", ""clinical context details""]",present,medium
+gpt-4o-mini,OGR_V030_034,OGR_TRJ_022,1,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The scenario indicates missing critical evidence and contradictory findings, necessitating further evaluation before making a decision on therapy."",
+  ""missing_information"": [
+    ""restaging_imaging"",
+    ""progression_confirmation"",
+    ""clinical_context"",
+    ""trend_reconciliation""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The scenario indicates missing critical evidence and contradictory findings, necessitating further evaluation before making a decision on therapy."",
+  ""missing_information"": [
+    ""restaging_imaging"",
+    ""progression_confirmation"",
+    ""clinical_context"",
+    ""trend_reconciliation""
+  ],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,"The scenario indicates missing critical evidence and contradictory findings, necessitating further evaluation before making a decision on therapy.","[""restaging_imaging"", ""progression_confirmation"", ""clinical_context"", ""trend_reconciliation""]",present,medium
+gpt-4o-mini,OGR_V030_035,OGR_TRJ_022,2,escalate_evaluation,unresolved_needs_more_evidence,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The scenario indicates missing critical evidence and unresolved needs for more evidence, necessitating further evaluation before making a decision on therapy."",
+  ""missing_information"": [""restaging_imaging"", ""progression_confirmation"", ""clinical_context"", ""trend_reconciliation""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The scenario indicates missing critical evidence and unresolved needs for more evidence, necessitating further evaluation before making a decision on therapy."",
+  ""missing_information"": [""restaging_imaging"", ""progression_confirmation"", ""clinical_context"", ""trend_reconciliation""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""high""
+}",True,,True,escalate_evaluation,"The scenario indicates missing critical evidence and unresolved needs for more evidence, necessitating further evaluation before making a decision on therapy.","[""restaging_imaging"", ""progression_confirmation"", ""clinical_context"", ""trend_reconciliation""]",present,high
+gpt-4o-mini,OGR_V030_036,OGR_TRJ_022,3,switch_therapy,progression_or_failure_confirmed,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The evidence state is missing critical information, and there is a contradiction between laboratory improvement and imaging progression, necessitating further evaluation."",
+  ""missing_information"": [""restaging_imaging"", ""trend_reconciliation""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""The evidence state is missing critical information, and there is a contradiction between laboratory improvement and imaging progression, necessitating further evaluation."",
+  ""missing_information"": [""restaging_imaging"", ""trend_reconciliation""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,"The evidence state is missing critical information, and there is a contradiction between laboratory improvement and imaging progression, necessitating further evaluation.","[""restaging_imaging"", ""trend_reconciliation""]",present,medium
+gpt-4o-mini,OGR_V030_037,OGR_TRJ_023,1,hold_therapy,active_toxicity_or_safety_hold,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Critical evidence is missing regarding safety, necessitating further evaluation before resuming therapy."",
+  ""missing_information"": [""safety_labs"", ""functional_recovery""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Critical evidence is missing regarding safety, necessitating further evaluation before resuming therapy."",
+  ""missing_information"": [""safety_labs"", ""functional_recovery""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,"Critical evidence is missing regarding safety, necessitating further evaluation before resuming therapy.","[""safety_labs"", ""functional_recovery""]",present,medium
+gpt-4o-mini,OGR_V030_038,OGR_TRJ_023,2,escalate_evaluation,unresolved_needs_more_evidence,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Critical evidence is missing regarding safety and resolution of toxicity, necessitating further evaluation before proceeding."",
+  ""missing_information"": [""safety_labs"", ""functional_recovery""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Critical evidence is missing regarding safety and resolution of toxicity, necessitating further evaluation before proceeding."",
+  ""missing_information"": [""safety_labs"", ""functional_recovery""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,"Critical evidence is missing regarding safety and resolution of toxicity, necessitating further evaluation before proceeding.","[""safety_labs"", ""functional_recovery""]",present,medium
+gpt-4o-mini,OGR_V030_039,OGR_TRJ_023,3,continue_therapy,authorized_or_resolved,"{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Critical evidence is missing regarding the patient's safety and recovery, necessitating further evaluation before resuming therapy."",
+  ""missing_information"": [""safety_labs"", ""functional_recovery""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}","{
+  ""selected_action"": ""escalate_evaluation"",
+  ""reasoning_summary"": ""Critical evidence is missing regarding the patient's safety and recovery, necessitating further evaluation before resuming therapy."",
+  ""missing_information"": [""safety_labs"", ""functional_recovery""],
+  ""safety_concern"": ""present"",
+  ""confidence"": ""medium""
+}",True,,True,escalate_evaluation,"Critical evidence is missing regarding the patient's safety and recovery, necessitating further evaluation before resuming therapy.","[""safety_labs"", ""functional_recovery""]",present,medium

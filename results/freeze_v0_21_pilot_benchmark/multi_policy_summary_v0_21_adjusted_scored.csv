@@ -1,0 +1,4 @@
+policy_name,n_policy_visit_evaluations,ptmar_percent,aacr_percent,defer_rate_percent,unsafe_authorization_rate_percent,over_deferral_rate_percent,correct_authorization_rate_percent,dominant_failure_mode
+permissive,39,23.1,76.9,0.0,23.1,0.0,76.9,unresolved_needs_more_evidence
+standard,39,0.0,100.0,23.1,0.0,0.0,100.0,none_observed
+conservative,39,0.0,100.0,23.1,0.0,0.0,100.0,none_observed
