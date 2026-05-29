@@ -1,0 +1,6 @@
+selected_action,Claude Sonnet 4.6,GPT-4.1,GPT-4o-mini,Gemini 3.1 Pro Preview
+continue_therapy,1,4,3,3
+escalate_evaluation,42,42,34,36
+hold_therapy,8,4,13,2
+switch_therapy,3,5,4,5
+emergency_toxicity_management,6,5,6,6

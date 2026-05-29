@@ -1,0 +1,8 @@
+error_type,Claude Sonnet 4.6,GPT-4.1,GPT-4o-mini,Gemini 3.1 Pro Preview
+correct_authorization,19.0,28.0,24.0,23.0
+over_deferral_when_continuation_authorized,17.0,21.0,14.0,18.0
+under_action_escalation_instead_of_definitive_safety_action,7.0,6.0,7.0,5.0
+schema_failure,8.0,0.0,0.0,8.0
+over_emergency_management,4.0,3.0,4.0,4.0
+over_hold_when_continuation_authorized,4.0,0.0,9.0,0.0
+over_switch_or_premature_switch,1.0,2.0,2.0,2.0
