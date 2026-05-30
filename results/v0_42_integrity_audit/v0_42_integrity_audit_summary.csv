@@ -1,0 +1,2 @@
+audit_version,source_design_version,case_generation_version,audit_passed,n_design_trajectories,n_design_visits,n_generated_trajectories,n_generated_visits,n_json_files,n_unique_trajectory_ids,n_json_schema_errors,n_inventory_mismatches,n_json_design_mismatches,n_expected_actions,n_evidence_statuses
+v0.42,v0.40,v0.41,True,100,300,100,300,100,100,0,0,0,5,5
