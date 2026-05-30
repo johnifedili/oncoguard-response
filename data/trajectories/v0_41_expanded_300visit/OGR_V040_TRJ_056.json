@@ -1,0 +1,242 @@
+{
+  "trajectory_id": "OGR_V040_TRJ_056",
+  "schema_version": "v0.41",
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": "v0.40 design matrix",
+    "notes": "Generated from locked v0.40 OncoGuard-Response design matrix."
+  },
+  "trajectory_title": "metastatic colorectal cancer on PARP/platinum-based therapy: progression or emergency escalation",
+  "cancer_context": {
+    "cancer_type": "metastatic colorectal cancer",
+    "subtype": "left-sided colon adenocarcinoma",
+    "stage": "IV",
+    "disease_setting": "metastatic/advanced disease on active systemic therapy",
+    "biomarker_context": [
+      "RAS",
+      "BRAF",
+      "MSI/MMR"
+    ]
+  },
+  "treatment_context": {
+    "current_regimen": "PARP inhibitor or platinum-based therapy",
+    "therapy_class": "PARP_platinum_based_therapy",
+    "therapy_class_label": "PARP/platinum-based therapy",
+    "line_of_therapy": "active systemic therapy",
+    "treatment_intent": "disease_control"
+  },
+  "trajectory_metadata": {
+    "design_version": "v0.40",
+    "generation_version": "v0.41",
+    "pattern_id": "P4",
+    "trajectory_pattern": "progression_or_emergency_escalation",
+    "p4_variant": "emergency_toxicity_management",
+    "dominant_failure_mode": "over_emergency_or_under_emergency_routing",
+    "authorization_dependency": "uncertainty evolves to confirmed progression or emergency toxicity",
+    "action_path": "continue_therapy -> hold_therapy -> emergency_toxicity_management",
+    "evidence_status_path": "authorized_or_resolved -> active_toxicity_or_safety_hold -> emergency_toxicity_confirmed"
+  },
+  "visits": [
+    {
+      "visit_id": "OGR_V040_TRJ_056_V1",
+      "visit_index": 1,
+      "timepoint_label": "Visit 1: progression or emergency escalation",
+      "clinical_input": {
+        "summary": "The patient with metastatic colorectal cancer is receiving PARP inhibitor or platinum-based therapy. Current assessment shows disease control involving liver metastases and primary colorectal lesion with acceptable safety data.",
+        "subjective_findings": [
+          "symptoms stable or improved",
+          "no new severe treatment-limiting complaint"
+        ],
+        "objective_findings": [
+          "ECOG performance status stable",
+          "no acute clinical deterioration"
+        ],
+        "vitals_or_instability": [
+          "stable unless emergency toxicity is specified"
+        ],
+        "laboratory_findings": [
+          "CBC, CMP, creatinine acceptable for ongoing therapy."
+        ],
+        "imaging_findings": [
+          "Restaging imaging shows response or stable disease in liver metastases and primary colorectal lesion without new lesions."
+        ],
+        "toxicity_findings": [
+          "No uncontrolled severe toxicity is identified."
+        ],
+        "complication_findings": [],
+        "free_text_note": "Designed to test over_emergency_or_under_emergency_routing in progression_or_emergency_escalation."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "biomarkers": true,
+        "specialist_input": false,
+        "follow_up_data": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "response_or_stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_status_stage_adjusted": "authorized_or_resolved",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "evidence is sufficient for continuation",
+          "no uncontrolled severe toxicity is present",
+          "no confirmed progression or emergency complication is present"
+        ],
+        "authorization_rationale": [
+          "evidence is sufficient for continuation",
+          "no uncontrolled severe toxicity is present",
+          "no confirmed progression or emergency complication is present"
+        ],
+        "dominant_failure_mode": "over_emergency_or_under_emergency_routing",
+        "reversibility_trigger_present": false
+      }
+    },
+    {
+      "visit_id": "OGR_V040_TRJ_056_V2",
+      "visit_index": 2,
+      "timepoint_label": "Visit 2: progression or emergency escalation",
+      "clinical_input": {
+        "summary": "The patient shows active safety concern while receiving PARP inhibitor or platinum-based therapy. The toxicity profile supports temporary treatment hold.",
+        "subjective_findings": [
+          "new or worsening treatment-related symptoms",
+          "functional impact or safety concern reported"
+        ],
+        "objective_findings": [
+          "findings consistent with clinically significant toxicity"
+        ],
+        "vitals_or_instability": [
+          "stable unless emergency toxicity is specified"
+        ],
+        "laboratory_findings": [
+          "Safety assessment suggests concern involving CBC, CMP, creatinine."
+        ],
+        "imaging_findings": [
+          "Imaging does not show a higher-priority need to switch therapy at this visit."
+        ],
+        "toxicity_findings": [
+          "Findings are concerning for myelosuppression, renal dysfunction, or cumulative fatigue requiring hold."
+        ],
+        "complication_findings": [],
+        "free_text_note": "Designed to test over_emergency_or_under_emergency_routing in progression_or_emergency_escalation."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "biomarkers": true,
+        "specialist_input": false,
+        "follow_up_data": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "response_or_stable_disease_with_toxicity",
+        "patient_state": "active_treatment_toxicity_or_safety_hold",
+        "evidence_state": "sufficient_for_safety_hold",
+        "evidence_status_stage_adjusted": "active_toxicity_or_safety_hold",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "hold_therapy",
+        "authorization_criteria_matched": [
+          "active treatment-related toxicity or safety concern requires interruption",
+          "immediate continuation is not appropriate until toxicity improves",
+          "patient-state safety overrides routine tumor-control continuation"
+        ],
+        "authorization_rationale": [
+          "active treatment-related toxicity or safety concern requires interruption",
+          "immediate continuation is not appropriate until toxicity improves",
+          "patient-state safety overrides routine tumor-control continuation"
+        ],
+        "dominant_failure_mode": "over_emergency_or_under_emergency_routing",
+        "reversibility_trigger_present": false
+      }
+    },
+    {
+      "visit_id": "OGR_V040_TRJ_056_V3",
+      "visit_index": 3,
+      "timepoint_label": "Visit 3: progression or emergency escalation",
+      "clinical_input": {
+        "summary": "The patient develops an acute severe complication while receiving PARP inhibitor or platinum-based therapy. Emergency toxicity management is required.",
+        "subjective_findings": [
+          "acute severe symptoms",
+          "patient requires urgent safety-focused evaluation"
+        ],
+        "objective_findings": [
+          "clinical instability or severe toxicity signal is present"
+        ],
+        "vitals_or_instability": [
+          "urgent instability or severe toxicity concern"
+        ],
+        "laboratory_findings": [
+          "Safety labs show severe abnormality or urgent concern related to myelosuppression, renal dysfunction, or cumulative fatigue."
+        ],
+        "imaging_findings": [
+          "Imaging is not the immediate driver of the decision at this visit."
+        ],
+        "toxicity_findings": [
+          "Emergency-level myelosuppression, renal dysfunction, or cumulative fatigue or acute complication is present."
+        ],
+        "complication_findings": [
+          "acute complication requiring urgent management"
+        ],
+        "free_text_note": "Designed to test over_emergency_or_under_emergency_routing in progression_or_emergency_escalation."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "biomarkers": true,
+        "specialist_input": false,
+        "follow_up_data": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "acute_toxicity_event",
+        "patient_state": "emergency_toxicity_or_acute_complication",
+        "evidence_state": "sufficient_for_emergency_management",
+        "evidence_status_stage_adjusted": "emergency_toxicity_confirmed",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "emergency_toxicity_management",
+        "authorization_criteria_matched": [
+          "emergency toxicity or acute complication is present",
+          "urgent management takes priority over routine continuation or switching",
+          "the patient requires immediate safety-focused intervention"
+        ],
+        "authorization_rationale": [
+          "emergency toxicity or acute complication is present",
+          "urgent management takes priority over routine continuation or switching",
+          "the patient requires immediate safety-focused intervention"
+        ],
+        "dominant_failure_mode": "over_emergency_or_under_emergency_routing",
+        "reversibility_trigger_present": false
+      }
+    }
+  ]
+}

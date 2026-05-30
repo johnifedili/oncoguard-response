@@ -1,0 +1,252 @@
+{
+  "trajectory_id": "OGR_V040_TRJ_100",
+  "schema_version": "v0.41",
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": "v0.40 design matrix",
+    "notes": "Generated from locked v0.40 OncoGuard-Response design matrix."
+  },
+  "trajectory_title": "metastatic ovarian cancer on cytotoxic chemotherapy: progression or emergency escalation",
+  "cancer_context": {
+    "cancer_type": "metastatic ovarian cancer",
+    "subtype": "high-grade serous carcinoma",
+    "stage": "IV",
+    "disease_setting": "metastatic/advanced disease on active systemic therapy",
+    "biomarker_context": [
+      "BRCA",
+      "HRD",
+      "platinum sensitivity"
+    ]
+  },
+  "treatment_context": {
+    "current_regimen": "cytotoxic chemotherapy",
+    "therapy_class": "cytotoxic_chemotherapy",
+    "therapy_class_label": "cytotoxic chemotherapy",
+    "line_of_therapy": "active systemic therapy",
+    "treatment_intent": "disease_control"
+  },
+  "trajectory_metadata": {
+    "design_version": "v0.40",
+    "generation_version": "v0.41",
+    "pattern_id": "P4",
+    "trajectory_pattern": "progression_or_emergency_escalation",
+    "p4_variant": "confirmed_progression_switch",
+    "dominant_failure_mode": "premature_switching_or_delayed_switch",
+    "authorization_dependency": "uncertainty evolves to confirmed progression or emergency toxicity",
+    "action_path": "continue_therapy -> escalate_evaluation -> switch_therapy",
+    "evidence_status_path": "authorized_or_resolved -> unresolved_needs_more_evidence -> progression_or_failure_confirmed"
+  },
+  "visits": [
+    {
+      "visit_id": "OGR_V040_TRJ_100_V1",
+      "visit_index": 1,
+      "timepoint_label": "Visit 1: progression or emergency escalation",
+      "clinical_input": {
+        "summary": "The patient with metastatic ovarian cancer is receiving cytotoxic chemotherapy. Current assessment shows disease control involving peritoneal disease and omental implants with acceptable safety data.",
+        "subjective_findings": [
+          "symptoms stable or improved",
+          "no new severe treatment-limiting complaint"
+        ],
+        "objective_findings": [
+          "ECOG performance status stable",
+          "no acute clinical deterioration"
+        ],
+        "vitals_or_instability": [
+          "stable unless emergency toxicity is specified"
+        ],
+        "laboratory_findings": [
+          "CBC with differential, CMP acceptable for ongoing therapy."
+        ],
+        "imaging_findings": [
+          "Restaging imaging shows response or stable disease in peritoneal disease and omental implants without new lesions."
+        ],
+        "toxicity_findings": [
+          "No uncontrolled severe toxicity is identified."
+        ],
+        "complication_findings": [],
+        "free_text_note": "Designed to test premature_switching_or_delayed_switch in progression_or_emergency_escalation."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "biomarkers": true,
+        "specialist_input": false,
+        "follow_up_data": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "response_or_stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_status_stage_adjusted": "authorized_or_resolved",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "evidence is sufficient for continuation",
+          "no uncontrolled severe toxicity is present",
+          "no confirmed progression or emergency complication is present"
+        ],
+        "authorization_rationale": [
+          "evidence is sufficient for continuation",
+          "no uncontrolled severe toxicity is present",
+          "no confirmed progression or emergency complication is present"
+        ],
+        "dominant_failure_mode": "premature_switching_or_delayed_switch",
+        "reversibility_trigger_present": false
+      }
+    },
+    {
+      "visit_id": "OGR_V040_TRJ_100_V2",
+      "visit_index": 2,
+      "timepoint_label": "Visit 2: progression or emergency escalation",
+      "clinical_input": {
+        "summary": "The patient with metastatic ovarian cancer is receiving cytotoxic chemotherapy, but critical response or safety evidence remains incomplete.",
+        "subjective_findings": [
+          "patient reports mixed or nonspecific symptoms",
+          "no definitive clinical conclusion can be made"
+        ],
+        "objective_findings": [
+          "clinically stable but incomplete authorization evidence"
+        ],
+        "vitals_or_instability": [
+          "stable unless emergency toxicity is specified"
+        ],
+        "laboratory_findings": [
+          "Key safety labs are incomplete or not yet resulted."
+        ],
+        "imaging_findings": [
+          "Restaging imaging is pending, delayed, or insufficient for definitive response assessment."
+        ],
+        "toxicity_findings": [
+          "Toxicity assessment is incomplete or requires clarification."
+        ],
+        "complication_findings": [],
+        "free_text_note": "Designed to test premature_switching_or_delayed_switch in progression_or_emergency_escalation."
+      },
+      "available_evidence": {
+        "imaging": false,
+        "labs": false,
+        "toxicity_assessment": "partial",
+        "biomarkers": true,
+        "specialist_input": false,
+        "follow_up_data": false
+      },
+      "critical_missing_evidence": [
+        "restaging_imaging",
+        "complete_safety_labs",
+        "complete_toxicity_assessment"
+      ],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "restaging_imaging",
+          "complete_safety_labs",
+          "complete_toxicity_assessment"
+        ],
+        "delayed_expected_data": [
+          "restaging_imaging",
+          "complete_safety_labs",
+          "complete_toxicity_assessment"
+        ],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "indeterminate",
+        "patient_state": "safety_or_response_status_unresolved",
+        "evidence_state": "missing_or_unresolved_critical_evidence",
+        "evidence_status_stage_adjusted": "unresolved_needs_more_evidence",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "critical evidence remains missing or unresolved",
+          "response or safety status cannot be definitively authorized",
+          "additional evaluation is required before a definitive treatment action"
+        ],
+        "authorization_rationale": [
+          "critical evidence remains missing or unresolved",
+          "response or safety status cannot be definitively authorized",
+          "additional evaluation is required before a definitive treatment action"
+        ],
+        "dominant_failure_mode": "premature_switching_or_delayed_switch",
+        "reversibility_trigger_present": true
+      }
+    },
+    {
+      "visit_id": "OGR_V040_TRJ_100_V3",
+      "visit_index": 3,
+      "timepoint_label": "Visit 3: progression or emergency escalation",
+      "clinical_input": {
+        "summary": "The patient has confirmed progression while receiving cytotoxic chemotherapy. The current regimen is no longer adequately controlling disease.",
+        "subjective_findings": [
+          "symptoms suggest worsening disease burden",
+          "no acute emergency instability"
+        ],
+        "objective_findings": [
+          "clinical assessment supports progression or treatment failure"
+        ],
+        "vitals_or_instability": [
+          "stable unless emergency toxicity is specified"
+        ],
+        "laboratory_findings": [
+          "Laboratory pattern is compatible with worsening disease or remains adequate for next-line planning."
+        ],
+        "imaging_findings": [
+          "Restaging imaging shows new ascites and enlarging peritoneal implants consistent with progression."
+        ],
+        "toxicity_findings": [
+          "No higher-priority emergency toxicity overrides progression management."
+        ],
+        "complication_findings": [],
+        "free_text_note": "Designed to test premature_switching_or_delayed_switch in progression_or_emergency_escalation."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "biomarkers": true,
+        "specialist_input": false,
+        "follow_up_data": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": true,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": true
+      },
+      "labels": {
+        "cancer_state": "progression",
+        "patient_state": "no_higher_priority_emergency_but_progression_confirmed",
+        "evidence_state": "sufficient_for_switch",
+        "evidence_status_stage_adjusted": "progression_or_failure_confirmed",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "switch_therapy",
+        "authorization_criteria_matched": [
+          "progression or regimen failure is sufficiently supported",
+          "continuation of the current regimen is no longer appropriate",
+          "next-line therapy planning is indicated"
+        ],
+        "authorization_rationale": [
+          "progression or regimen failure is sufficiently supported",
+          "continuation of the current regimen is no longer appropriate",
+          "next-line therapy planning is indicated"
+        ],
+        "dominant_failure_mode": "premature_switching_or_delayed_switch",
+        "reversibility_trigger_present": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+generation_version,source_design_version,n_trajectories,n_visits,n_json_files,n_cancer_types,n_therapy_classes,n_patterns
+v0.41,v0.40,100,300,100,5,5,4

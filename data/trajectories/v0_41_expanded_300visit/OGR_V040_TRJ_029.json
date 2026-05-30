@@ -1,0 +1,242 @@
+{
+  "trajectory_id": "OGR_V040_TRJ_029",
+  "schema_version": "v0.41",
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": "v0.40 design matrix",
+    "notes": "Generated from locked v0.40 OncoGuard-Response design matrix."
+  },
+  "trajectory_title": "metastatic breast cancer on HER2-directed therapy: clean response continuation",
+  "cancer_context": {
+    "cancer_type": "metastatic breast cancer",
+    "subtype": "HER2-positive or hormone receptor-positive metastatic breast cancer",
+    "stage": "IV",
+    "disease_setting": "metastatic/advanced disease on active systemic therapy",
+    "biomarker_context": [
+      "HER2",
+      "ER",
+      "PR"
+    ]
+  },
+  "treatment_context": {
+    "current_regimen": "HER2-directed therapy",
+    "therapy_class": "HER2_directed_therapy",
+    "therapy_class_label": "HER2-directed therapy",
+    "line_of_therapy": "active systemic therapy",
+    "treatment_intent": "disease_control"
+  },
+  "trajectory_metadata": {
+    "design_version": "v0.40",
+    "generation_version": "v0.41",
+    "pattern_id": "P1",
+    "trajectory_pattern": "clean_response_continuation",
+    "p4_variant": "",
+    "dominant_failure_mode": "low_continuation_authorization",
+    "authorization_dependency": "response and safety evidence are sufficient; continuation should be authorized",
+    "action_path": "continue_therapy -> continue_therapy -> continue_therapy",
+    "evidence_status_path": "authorized_or_resolved -> authorized_or_resolved -> authorized_or_resolved"
+  },
+  "visits": [
+    {
+      "visit_id": "OGR_V040_TRJ_029_V1",
+      "visit_index": 1,
+      "timepoint_label": "Visit 1: clean response continuation",
+      "clinical_input": {
+        "summary": "The patient with metastatic breast cancer is receiving HER2-directed therapy. Current assessment shows disease control involving breast/chest wall disease and liver metastases with acceptable safety data.",
+        "subjective_findings": [
+          "symptoms stable or improved",
+          "no new severe treatment-limiting complaint"
+        ],
+        "objective_findings": [
+          "ECOG performance status stable",
+          "no acute clinical deterioration"
+        ],
+        "vitals_or_instability": [
+          "stable unless emergency toxicity is specified"
+        ],
+        "laboratory_findings": [
+          "CBC, CMP, cardiac monitoring acceptable for ongoing therapy."
+        ],
+        "imaging_findings": [
+          "Restaging imaging shows response or stable disease in breast/chest wall disease and liver metastases without new lesions."
+        ],
+        "toxicity_findings": [
+          "No uncontrolled severe toxicity is identified."
+        ],
+        "complication_findings": [],
+        "free_text_note": "Designed to test low_continuation_authorization in clean_response_continuation."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "biomarkers": true,
+        "specialist_input": false,
+        "follow_up_data": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "response_or_stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_status_stage_adjusted": "authorized_or_resolved",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "evidence is sufficient for continuation",
+          "no uncontrolled severe toxicity is present",
+          "no confirmed progression or emergency complication is present"
+        ],
+        "authorization_rationale": [
+          "evidence is sufficient for continuation",
+          "no uncontrolled severe toxicity is present",
+          "no confirmed progression or emergency complication is present"
+        ],
+        "dominant_failure_mode": "low_continuation_authorization",
+        "reversibility_trigger_present": false
+      }
+    },
+    {
+      "visit_id": "OGR_V040_TRJ_029_V2",
+      "visit_index": 2,
+      "timepoint_label": "Visit 2: clean response continuation",
+      "clinical_input": {
+        "summary": "The patient with metastatic breast cancer is receiving HER2-directed therapy. Current assessment shows disease control involving breast/chest wall disease and liver metastases with acceptable safety data.",
+        "subjective_findings": [
+          "symptoms stable or improved",
+          "no new severe treatment-limiting complaint"
+        ],
+        "objective_findings": [
+          "ECOG performance status stable",
+          "no acute clinical deterioration"
+        ],
+        "vitals_or_instability": [
+          "stable unless emergency toxicity is specified"
+        ],
+        "laboratory_findings": [
+          "CBC, CMP, cardiac monitoring acceptable for ongoing therapy."
+        ],
+        "imaging_findings": [
+          "Restaging imaging shows response or stable disease in breast/chest wall disease and liver metastases without new lesions."
+        ],
+        "toxicity_findings": [
+          "No uncontrolled severe toxicity is identified."
+        ],
+        "complication_findings": [],
+        "free_text_note": "Designed to test low_continuation_authorization in clean_response_continuation."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "biomarkers": true,
+        "specialist_input": false,
+        "follow_up_data": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "response_or_stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_status_stage_adjusted": "authorized_or_resolved",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "evidence is sufficient for continuation",
+          "no uncontrolled severe toxicity is present",
+          "no confirmed progression or emergency complication is present"
+        ],
+        "authorization_rationale": [
+          "evidence is sufficient for continuation",
+          "no uncontrolled severe toxicity is present",
+          "no confirmed progression or emergency complication is present"
+        ],
+        "dominant_failure_mode": "low_continuation_authorization",
+        "reversibility_trigger_present": false
+      }
+    },
+    {
+      "visit_id": "OGR_V040_TRJ_029_V3",
+      "visit_index": 3,
+      "timepoint_label": "Visit 3: clean response continuation",
+      "clinical_input": {
+        "summary": "The patient with metastatic breast cancer is receiving HER2-directed therapy. Current assessment shows disease control involving breast/chest wall disease and liver metastases with acceptable safety data.",
+        "subjective_findings": [
+          "symptoms stable or improved",
+          "no new severe treatment-limiting complaint"
+        ],
+        "objective_findings": [
+          "ECOG performance status stable",
+          "no acute clinical deterioration"
+        ],
+        "vitals_or_instability": [
+          "stable unless emergency toxicity is specified"
+        ],
+        "laboratory_findings": [
+          "CBC, CMP, cardiac monitoring acceptable for ongoing therapy."
+        ],
+        "imaging_findings": [
+          "Restaging imaging shows response or stable disease in breast/chest wall disease and liver metastases without new lesions."
+        ],
+        "toxicity_findings": [
+          "No uncontrolled severe toxicity is identified."
+        ],
+        "complication_findings": [],
+        "free_text_note": "Designed to test low_continuation_authorization in clean_response_continuation."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "biomarkers": true,
+        "specialist_input": false,
+        "follow_up_data": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "response_or_stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_status_stage_adjusted": "authorized_or_resolved",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "evidence is sufficient for continuation",
+          "no uncontrolled severe toxicity is present",
+          "no confirmed progression or emergency complication is present"
+        ],
+        "authorization_rationale": [
+          "evidence is sufficient for continuation",
+          "no uncontrolled severe toxicity is present",
+          "no confirmed progression or emergency complication is present"
+        ],
+        "dominant_failure_mode": "low_continuation_authorization",
+        "reversibility_trigger_present": false
+      }
+    }
+  ]
+}

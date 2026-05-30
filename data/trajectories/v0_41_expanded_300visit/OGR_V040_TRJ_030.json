@@ -1,0 +1,264 @@
+{
+  "trajectory_id": "OGR_V040_TRJ_030",
+  "schema_version": "v0.41",
+  "case_source": {
+    "source_type": "synthetic",
+    "source_reference": "v0.40 design matrix",
+    "notes": "Generated from locked v0.40 OncoGuard-Response design matrix."
+  },
+  "trajectory_title": "metastatic breast cancer on HER2-directed therapy: missing evidence then resolution",
+  "cancer_context": {
+    "cancer_type": "metastatic breast cancer",
+    "subtype": "HER2-positive or hormone receptor-positive metastatic breast cancer",
+    "stage": "IV",
+    "disease_setting": "metastatic/advanced disease on active systemic therapy",
+    "biomarker_context": [
+      "HER2",
+      "ER",
+      "PR"
+    ]
+  },
+  "treatment_context": {
+    "current_regimen": "HER2-directed therapy",
+    "therapy_class": "HER2_directed_therapy",
+    "therapy_class_label": "HER2-directed therapy",
+    "line_of_therapy": "active systemic therapy",
+    "treatment_intent": "disease_control"
+  },
+  "trajectory_metadata": {
+    "design_version": "v0.40",
+    "generation_version": "v0.41",
+    "pattern_id": "P2",
+    "trajectory_pattern": "missing_evidence_then_resolution",
+    "p4_variant": "",
+    "dominant_failure_mode": "over_deferral_or_under_continuation",
+    "authorization_dependency": "initial evidence is incomplete but later resolves and supports continuation",
+    "action_path": "escalate_evaluation -> escalate_evaluation -> continue_therapy",
+    "evidence_status_path": "unresolved_needs_more_evidence -> unresolved_needs_more_evidence -> authorized_or_resolved"
+  },
+  "visits": [
+    {
+      "visit_id": "OGR_V040_TRJ_030_V1",
+      "visit_index": 1,
+      "timepoint_label": "Visit 1: missing evidence then resolution",
+      "clinical_input": {
+        "summary": "The patient with metastatic breast cancer is receiving HER2-directed therapy, but critical response or safety evidence remains incomplete.",
+        "subjective_findings": [
+          "patient reports mixed or nonspecific symptoms",
+          "no definitive clinical conclusion can be made"
+        ],
+        "objective_findings": [
+          "clinically stable but incomplete authorization evidence"
+        ],
+        "vitals_or_instability": [
+          "stable unless emergency toxicity is specified"
+        ],
+        "laboratory_findings": [
+          "Key safety labs are incomplete or not yet resulted."
+        ],
+        "imaging_findings": [
+          "Restaging imaging is pending, delayed, or insufficient for definitive response assessment."
+        ],
+        "toxicity_findings": [
+          "Toxicity assessment is incomplete or requires clarification."
+        ],
+        "complication_findings": [],
+        "free_text_note": "Designed to test over_deferral_or_under_continuation in missing_evidence_then_resolution."
+      },
+      "available_evidence": {
+        "imaging": false,
+        "labs": false,
+        "toxicity_assessment": "partial",
+        "biomarkers": true,
+        "specialist_input": false,
+        "follow_up_data": false
+      },
+      "critical_missing_evidence": [
+        "restaging_imaging",
+        "complete_safety_labs",
+        "complete_toxicity_assessment"
+      ],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "restaging_imaging",
+          "complete_safety_labs",
+          "complete_toxicity_assessment"
+        ],
+        "delayed_expected_data": [
+          "restaging_imaging",
+          "complete_safety_labs",
+          "complete_toxicity_assessment"
+        ],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "indeterminate",
+        "patient_state": "safety_or_response_status_unresolved",
+        "evidence_state": "missing_or_unresolved_critical_evidence",
+        "evidence_status_stage_adjusted": "unresolved_needs_more_evidence",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "critical evidence remains missing or unresolved",
+          "response or safety status cannot be definitively authorized",
+          "additional evaluation is required before a definitive treatment action"
+        ],
+        "authorization_rationale": [
+          "critical evidence remains missing or unresolved",
+          "response or safety status cannot be definitively authorized",
+          "additional evaluation is required before a definitive treatment action"
+        ],
+        "dominant_failure_mode": "over_deferral_or_under_continuation",
+        "reversibility_trigger_present": true
+      }
+    },
+    {
+      "visit_id": "OGR_V040_TRJ_030_V2",
+      "visit_index": 2,
+      "timepoint_label": "Visit 2: missing evidence then resolution",
+      "clinical_input": {
+        "summary": "The patient with metastatic breast cancer is receiving HER2-directed therapy, but critical response or safety evidence remains incomplete.",
+        "subjective_findings": [
+          "patient reports mixed or nonspecific symptoms",
+          "no definitive clinical conclusion can be made"
+        ],
+        "objective_findings": [
+          "clinically stable but incomplete authorization evidence"
+        ],
+        "vitals_or_instability": [
+          "stable unless emergency toxicity is specified"
+        ],
+        "laboratory_findings": [
+          "Key safety labs are incomplete or not yet resulted."
+        ],
+        "imaging_findings": [
+          "Restaging imaging is pending, delayed, or insufficient for definitive response assessment."
+        ],
+        "toxicity_findings": [
+          "Toxicity assessment is incomplete or requires clarification."
+        ],
+        "complication_findings": [],
+        "free_text_note": "Designed to test over_deferral_or_under_continuation in missing_evidence_then_resolution."
+      },
+      "available_evidence": {
+        "imaging": false,
+        "labs": false,
+        "toxicity_assessment": "partial",
+        "biomarkers": true,
+        "specialist_input": false,
+        "follow_up_data": false
+      },
+      "critical_missing_evidence": [
+        "restaging_imaging",
+        "complete_safety_labs",
+        "complete_toxicity_assessment"
+      ],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": true,
+        "missing_categories": [
+          "restaging_imaging",
+          "complete_safety_labs",
+          "complete_toxicity_assessment"
+        ],
+        "delayed_expected_data": [
+          "restaging_imaging",
+          "complete_safety_labs",
+          "complete_toxicity_assessment"
+        ],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "indeterminate",
+        "patient_state": "safety_or_response_status_unresolved",
+        "evidence_state": "missing_or_unresolved_critical_evidence",
+        "evidence_status_stage_adjusted": "unresolved_needs_more_evidence",
+        "evidence_sufficient_for_action": false,
+        "authorized_action": "escalate_evaluation",
+        "authorization_criteria_matched": [
+          "critical evidence remains missing or unresolved",
+          "response or safety status cannot be definitively authorized",
+          "additional evaluation is required before a definitive treatment action"
+        ],
+        "authorization_rationale": [
+          "critical evidence remains missing or unresolved",
+          "response or safety status cannot be definitively authorized",
+          "additional evaluation is required before a definitive treatment action"
+        ],
+        "dominant_failure_mode": "over_deferral_or_under_continuation",
+        "reversibility_trigger_present": true
+      }
+    },
+    {
+      "visit_id": "OGR_V040_TRJ_030_V3",
+      "visit_index": 3,
+      "timepoint_label": "Visit 3: missing evidence then resolution",
+      "clinical_input": {
+        "summary": "The patient with metastatic breast cancer is receiving HER2-directed therapy. Current assessment shows disease control involving breast/chest wall disease and liver metastases with acceptable safety data.",
+        "subjective_findings": [
+          "symptoms stable or improved",
+          "no new severe treatment-limiting complaint"
+        ],
+        "objective_findings": [
+          "ECOG performance status stable",
+          "no acute clinical deterioration"
+        ],
+        "vitals_or_instability": [
+          "stable unless emergency toxicity is specified"
+        ],
+        "laboratory_findings": [
+          "CBC, CMP, cardiac monitoring acceptable for ongoing therapy."
+        ],
+        "imaging_findings": [
+          "Restaging imaging shows response or stable disease in breast/chest wall disease and liver metastases without new lesions."
+        ],
+        "toxicity_findings": [
+          "No uncontrolled severe toxicity is identified."
+        ],
+        "complication_findings": [],
+        "free_text_note": "Designed to test over_deferral_or_under_continuation in missing_evidence_then_resolution."
+      },
+      "available_evidence": {
+        "imaging": true,
+        "labs": true,
+        "toxicity_assessment": "complete",
+        "biomarkers": true,
+        "specialist_input": false,
+        "follow_up_data": true
+      },
+      "critical_missing_evidence": [],
+      "narrative_pressures": [],
+      "discordance_present": false,
+      "missingness": {
+        "critical_data_missing": false,
+        "missing_categories": [],
+        "delayed_expected_data": [],
+        "contradictory_evidence_present": false
+      },
+      "labels": {
+        "cancer_state": "response_or_stable_disease",
+        "patient_state": "no_major_safety_issue",
+        "evidence_state": "sufficient",
+        "evidence_status_stage_adjusted": "authorized_or_resolved",
+        "evidence_sufficient_for_action": true,
+        "authorized_action": "continue_therapy",
+        "authorization_criteria_matched": [
+          "evidence is sufficient for continuation",
+          "no uncontrolled severe toxicity is present",
+          "no confirmed progression or emergency complication is present"
+        ],
+        "authorization_rationale": [
+          "evidence is sufficient for continuation",
+          "no uncontrolled severe toxicity is present",
+          "no confirmed progression or emergency complication is present"
+        ],
+        "dominant_failure_mode": "over_deferral_or_under_continuation",
+        "reversibility_trigger_present": false
+      }
+    }
+  ]
+}

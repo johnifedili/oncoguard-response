@@ -1,0 +1,6 @@
+expected_action,count,percent
+continue_therapy,175,58.3
+escalate_evaluation,63,21.0
+hold_therapy,37,12.3
+switch_therapy,13,4.3
+emergency_toxicity_management,12,4.0
