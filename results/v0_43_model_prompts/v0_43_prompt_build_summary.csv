@@ -1,0 +1,2 @@
+prompt_version,source_design_version,source_generation_version,source_audit_version,n_prompts,n_trajectories,n_expected_actions,n_evidence_statuses,first_prompt_id,last_prompt_id
+v0.43,v0.40-design-matrix,v0.41-case-generation,v0.42-integrity-audit,300,100,5,5,OGR_V043_001,OGR_V043_300
