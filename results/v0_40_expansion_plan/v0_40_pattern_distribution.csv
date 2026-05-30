@@ -1,0 +1,5 @@
+trajectory_pattern,count
+clean_response_continuation,25
+missing_evidence_then_resolution,25
+toxicity_hold_then_rechallenge_or_resolution,25
+progression_or_emergency_escalation,25
