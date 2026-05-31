@@ -1,0 +1,2 @@
+comparison,n,unguided_wrong_controller_correct_b,unguided_correct_controller_wrong_c,discordant_pairs,exact_two_sided_p,interpretation
+gemini_flash_unguided_model_vs_evidence_contract_controller,300,100,0,100,1.5777218104420236e-30,paired exact McNemar-style/binomial sign test for correctness improvement
