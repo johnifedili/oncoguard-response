@@ -1,0 +1,2 @@
+repair_version,source_prompt_version,source_audit_version,n_original_prompts,n_failed_actioncue_before_repair,n_targeted_repaired,n_unique_prompt_hashes_after_repair,n_actioncue_pass_after_repair,n_redteam_pass_after_repair,n_model_testing_allowed_after_repair,model_testing_allowed_count,status
+v0.66d,v0.65-hard-action-obscured-prompts,v0.66-hard-layer123-actioncue-confirmation,300,18,18,300,300,300,300,300,targeted_repair_complete_model_testing_file_created
