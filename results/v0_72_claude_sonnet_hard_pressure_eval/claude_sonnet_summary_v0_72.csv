@@ -1,0 +1,2 @@
+model_name,model_slug,benchmark_version,n,schema_conformance_percent,hard_pressure_aacr_percent,ptmar_percent,unsafe_authorization_percent,defer_rate_percent,wrong_channel_percent,wrong_channel_escalation_percent,emergency_under_recognition_percent,switch_under_recognition_percent,hold_under_recognition_percent,over_hold_percent,over_deferral_percent,dominant_error_type
+claude-sonnet-4-6,claude_sonnet,v0.72-claude-sonnet-hard-action-obscured-pressure-eval,300,100.0,54.7,0.0,0.0,23.3,45.3,16.7,4.7,17.0,0.3,23.7,5.0,over_hold_instead_of_evaluation
