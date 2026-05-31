@@ -1,0 +1,6 @@
+controller_intervention_type,count
+no_intervention_needed,164
+corrected_over_hold_to_evaluation,55
+corrected_wrong_channel_escalation_to_definitive_action,50
+corrected_wrong_channel_hold_to_definitive_action,16
+corrected_over_deferral_to_continuation,15
