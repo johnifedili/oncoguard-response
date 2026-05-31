@@ -1,0 +1,9 @@
+query_group,query,target
+clinical_llm_evaluation,large language models clinical reasoning diagnostic reasoning evaluation JAMA Network Open 2024,Clinical LLM evaluation studies.
+clinical_llm_limitations,large language models clinical decision making limitations Nature Medicine 2024 Hager,Nature Medicine LLM limitation study.
+reporting_guidelines,DECIDE-AI CONSORT-AI SPIRIT-AI reporting guidelines artificial intelligence clinical decision support,Clinical AI reporting standards.
+governance,NIST AI Risk Management Framework healthcare AI governance WHO ethics governance AI health,AI governance frameworks.
+human_factors_pressure,clinical pressure authority gradient interruption workload medication safety human factors,Human factors / clinical pressure literature.
+benchmark_leakage,benchmark leakage shortcut learning machine learning evaluation dataset artifacts,Benchmark validity literature.
+guardrails_controllers,AI guardrails external controller constrained decision system safety critical AI,Controller/guardrail literature.
+oncology_guidelines,ASCO guideline immune-related adverse events hold therapy emergency toxicity management oncology,Oncology therapeutic action guidance.

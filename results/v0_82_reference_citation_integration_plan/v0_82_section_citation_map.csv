@@ -1,0 +1,14 @@
+section,citation_need,recommended_refs,priority
+Abstract,Usually no citations unless journal permits; keep evidence internal to study.,,low
+Introduction paragraph 1,Clinical LLMs increasingly evaluated for clinical reasoning and decision support.,R01; R02; systematic reviews,high
+Introduction paragraph 2,Oncology therapeutic management requires distinct action channels and safety-sensitive decisions.,R10; oncology toxicity/response guidance,high
+Introduction paragraph 3,"Clinical pressure, interruptions, and authority/workflow pressure can affect safety behavior.",R07,medium-high
+Introduction paragraph 4,Benchmark cue leakage and shortcut learning can inflate model performance.,R08,high
+Methods benchmark design,Reporting guidance and benchmark transparency.,R03; R06,high
+Methods endpoints,Endpoint definitions mostly internal; cite reporting/clinical safety where needed.,R03; R10,medium
+Methods controller,Guardrail/controller/constrained decision system framing.,R04; R09,high
+Discussion principal findings,Compare with prior LLM clinical reasoning limitations.,R01; R02,high
+Discussion naturalistic pressure,Support pressure as workflow/human-factors risk.,R07,medium-high
+Discussion evidence-contract control,"AI governance, risk management, controller/guardrail framing.",R04; R05; R09,high
+Discussion benchmark validity,Support action-cue leakage as benchmark validity issue.,R08,high
+Limitations,"Synthetic benchmark, reporting limitations, external validation requirements.",R03; R06,medium-high

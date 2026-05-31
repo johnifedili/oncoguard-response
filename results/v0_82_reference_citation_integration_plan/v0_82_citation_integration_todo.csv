@@ -1,0 +1,8 @@
+task_order,task,output
+1,Verify metadata for seed references R01-R06,Confirmed citation strings with DOI/PMID/URL where available.
+2,Search human-factors/clinical pressure literature for R07,"3–5 references on authority gradient, interruption, workload, and medication/clinical safety."
+3,Search benchmark leakage/shortcut learning literature for R08,3–5 ML benchmark validity references.
+4,Search guardrail/controller literature for R09,"3–5 references on external controllers, constrained decision systems, guardrails."
+5,Select oncology guideline citations for R10,ASCO/ESMO/NCCN or equivalent guideline sources for therapy hold/switch/emergency toxicity actions.
+6,Insert citations into v0.81 manuscript,v0.83 cited manuscript draft.
+7,Generate reference list in target journal style,v0.83 reference list and citation-integrated manuscript.
