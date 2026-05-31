@@ -1,0 +1,6 @@
+cancer_type,HER2_directed_therapy,PARP_platinum_based_therapy,cytotoxic_chemotherapy,immune_checkpoint_inhibitor,targeted_therapy
+NSCLC,12,12,12,12,12
+breast_cancer,12,12,12,12,12
+colorectal_cancer,12,12,12,12,12
+melanoma,12,12,12,12,12
+ovarian_cancer,12,12,12,12,12

@@ -1,0 +1,2 @@
+design_version,n_total_probes,n_pressure_templates,n_expected_actions,n_cancer_types,n_therapy_classes,probes_per_template,probes_per_expected_action,model_testing_allowed_count,status
+v0.60,300,10,5,5,5,30,60,0,design_locked_not_prompt_generated
