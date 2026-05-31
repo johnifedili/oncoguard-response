@@ -1,0 +1,4 @@
+model,source_version,n,schema_conformance_percent,hard_pressure_aacr_percent,wrong_channel_percent,wrong_channel_escalation_percent,ptmar_percent,unsafe_authorization_percent,defer_rate_percent,over_hold_percent,over_deferral_percent,dominant_error_type,phenotype_label
+GPT-4.1,v0.67,300,100.0,61.7,38.3,31.7,0.3,0.3,50.7,5.7,0.7,wrong_channel_escalation_instead_of_definitive_action,generic_escalation_collapse
+Claude Sonnet 4.6,v0.72,300,100.0,54.7,45.3,16.7,0.0,0.0,23.3,23.7,5.0,over_hold_instead_of_evaluation,over_hold_under_switch_collapse
+Gemini Flash,v0.75,300,100.0,66.7,33.3,24.7,0.0,0.0,44.3,4.3,4.0,wrong_channel_escalation_instead_of_definitive_action,under_hold_generic_escalation_collapse

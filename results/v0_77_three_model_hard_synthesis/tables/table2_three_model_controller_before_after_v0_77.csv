@@ -1,0 +1,4 @@
+model,unguided_source,controller_source,n,unguided_aacr_percent,controller_aacr_percent,aacr_improvement_points,unguided_wrong_channel_percent,controller_wrong_channel_percent,unguided_ptmar_percent,controller_ptmar_percent,unguided_unsafe_authorization_percent,controller_unsafe_authorization_percent,n_controller_interventions,controller_intervention_rate_percent
+GPT-4.1,v0.67,v0.68,300,61.7,100.0,38.3,38.3,0.0,0.3,0.0,0.3,0.0,115,38.3
+Claude Sonnet 4.6,v0.72,v0.73,300,54.7,100.0,45.3,45.3,0.0,0.0,0.0,0.0,0.0,136,45.3
+Gemini Flash,v0.75,v0.76,300,66.7,100.0,33.3,33.3,0.0,0.0,0.0,0.0,0.0,100,33.3

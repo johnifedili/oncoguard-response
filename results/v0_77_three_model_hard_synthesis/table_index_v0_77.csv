@@ -1,0 +1,9 @@
+table,filename,title
+Table 1,table1_three_model_unguided_comparison_v0_77.csv,Three-model unguided comparison
+Table 2,table2_three_model_controller_before_after_v0_77.csv,Three-model controller before/after comparison
+Table 3,table3_three_model_error_phenotype_comparison_v0_77.csv,Three-model error phenotype comparison
+Table 4,table4_three_model_controller_intervention_comparison_v0_77.csv,Three-model controller intervention comparison
+Table 5,table5_three_model_paired_tests_v0_77.csv,Three-model paired correctness tests
+Table 6a,table6a_gpt41_expected_vs_selected_v0_77.csv,GPT-4.1 expected vs selected matrix
+Table 6b,table6b_claude_expected_vs_selected_v0_77.csv,Claude expected vs selected matrix
+Table 6c,table6c_gemini_expected_vs_selected_v0_77.csv,Gemini expected vs selected matrix

@@ -1,0 +1,9 @@
+figure,filename,title,purpose
+Figure 1,figure1_three_model_unguided_aacr_v0_77.png,Unguided AACR by model,Shows all three models have imperfect action-channel accuracy on the hard benchmark.
+Figure 2,figure2_three_model_wrong_channel_rate_v0_77.png,Unguided wrong-channel rate by model,Shows wrong-channel instability across all three models.
+Figure 3,figure3_three_model_controller_before_after_aacr_v0_77.png,Controller before/after AACR,Shows evidence-contract controller restores AACR across all three models.
+Figure 4,figure4_three_model_error_phenotypes_v0_77.png,Three-model failure phenotypes,"Contrasts GPT-4.1 escalation, Claude over-hold/under-switch, and Gemini under-hold/escalation phenotypes."
+Figure 5,figure5_three_model_controller_interventions_v0_77.png,Controller intervention phenotypes,Shows which model-specific failures the controller corrected.
+Figure 6a,figure6_gpt41_expected_vs_selected_heatmap_v0_77.png,GPT-4.1 expected vs selected action,Shows GPT-4.1 routing distribution.
+Figure 6b,figure6_claude_expected_vs_selected_heatmap_v0_77.png,Claude expected vs selected action,Shows Claude routing distribution.
+Figure 6c,figure6_gemini_expected_vs_selected_heatmap_v0_77.png,Gemini expected vs selected action,Shows Gemini routing distribution.
