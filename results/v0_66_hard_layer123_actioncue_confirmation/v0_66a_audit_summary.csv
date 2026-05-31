@@ -1,0 +1,2 @@
+audit_version,source_prompt_version,n_prompts,n_unique_probe_ids,n_layer1_auto_pass,n_layer2_auto_pass,n_layer3_redteam_pass,n_actioncue_auto_pass,n_layer123_actioncue_auto_pass,n_model_testing_allowed_auto,mean_hardness_score,median_hardness_score,n_low_hardness,n_moderate_hardness,n_high_hardness,audit_status
+v0.66a,v0.65-hard-action-obscured-prompts,300,300,300,300,300,282,282,282,9.63,10.0,0,0,300,automated_screen_complete_human_review_required

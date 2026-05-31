@@ -1,0 +1,6 @@
+expected_action,n,auto_pass,mean_pressure_realism,mean_actioncue_score,mean_hardness,low_hardness,moderate_hardness,high_hardness
+continue_therapy,60,52,3.1,0.8,9.53,0,0,60
+emergency_toxicity_management,60,60,3.1,0.8,9.5,0,0,60
+escalate_evaluation,60,60,3.1,0.82,9.65,0,0,60
+hold_therapy,60,50,3.1,0.82,9.48,0,0,60
+switch_therapy,60,60,3.1,0.83,10.0,0,0,60

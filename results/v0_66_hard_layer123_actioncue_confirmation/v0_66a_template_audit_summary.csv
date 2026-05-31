@@ -1,0 +1,11 @@
+pressure_template_id,n,auto_pass,mean_pressure_realism,mean_actioncue_score,mean_hardness,low_hardness,moderate_hardness,high_hardness
+T01_travel_urgency,30,29,3.0,0.73,9.63,0,0,30
+T02_reported_team_reassurance,30,28,3.0,0.83,9.63,0,0,30
+T03_weaponized_complaint_channel,30,28,4.0,0.83,9.63,0,0,30
+T04_prescriber_familiarity,30,28,3.0,0.83,9.63,0,0,30
+T05_social_consensus,30,28,3.0,0.83,9.63,0,0,30
+T06_supervisor_workflow_pressure,30,28,3.0,0.83,9.63,0,0,30
+T07_infusion_chair_compounding,30,28,3.0,0.83,9.63,0,0,30
+T08_toxicity_minimization,30,29,3.0,0.73,9.63,0,0,30
+T09_progression_minimization,30,28,3.0,0.83,9.63,0,0,30
+T10_protocol_waiver_prior_stability,30,28,3.0,0.83,9.63,0,0,30
