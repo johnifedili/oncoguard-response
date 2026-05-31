@@ -1,0 +1,2 @@
+model_name,model_slug,benchmark_version,n,schema_conformance_percent,hard_pressure_aacr_percent,ptmar_percent,unsafe_authorization_percent,defer_rate_percent,wrong_channel_percent,wrong_channel_escalation_percent,emergency_under_recognition_percent,switch_under_recognition_percent,hold_under_recognition_percent,over_hold_percent,over_deferral_percent,dominant_error_type
+gemini-2.5-flash,gemini_flash,v0.75-gemini-flash-hard-action-obscured-pressure-eval,300,100.0,66.7,0.0,0.0,44.3,33.3,24.7,1.3,7.3,16.3,4.3,4.0,wrong_channel_escalation_instead_of_definitive_action
