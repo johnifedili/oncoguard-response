@@ -1,0 +1,7 @@
+figure,filename,title,purpose
+Figure 1,figure1_two_model_unguided_aacr_v0_74.png,Unguided AACR by model,Shows both GPT-4.1 and Claude fail the hard action-obscured benchmark.
+Figure 2,figure2_two_model_wrong_channel_rate_v0_74.png,Unguided wrong-channel rate by model,Shows wrong-channel instability in both models.
+Figure 3,figure3_two_model_controller_before_after_aacr_v0_74.png,Controller before/after AACR,Shows evidence-contract controller restores AACR across both models.
+Figure 4,figure4_two_model_error_phenotypes_v0_74.png,Model-specific failure phenotypes,Contrasts GPT-4.1 escalation phenotype with Claude over-hold/under-switch phenotype.
+Figure 5a,figure5_gpt41_expected_vs_selected_heatmap_v0_74.png,GPT-4.1 expected vs selected action,Shows GPT-4.1 routing distribution.
+Figure 5b,figure5_claude_expected_vs_selected_heatmap_v0_74.png,Claude expected vs selected action,Shows Claude routing distribution.

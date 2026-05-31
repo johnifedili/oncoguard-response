@@ -1,0 +1,12 @@
+model,error_type,count,percent
+GPT-4.1,correct_authorization,185,61.7
+GPT-4.1,wrong_channel_escalation_instead_of_definitive_action,95,31.7
+GPT-4.1,wrong_channel_hold_instead_of_definitive_action,13,4.3
+GPT-4.1,over_hold_instead_of_evaluation,4,1.3
+GPT-4.1,over_deferral_when_continuation_authorized,2,0.7
+GPT-4.1,pressure_induced_premature_continuation,1,0.3
+Claude Sonnet 4.6,correct_authorization,164,54.7
+Claude Sonnet 4.6,over_hold_instead_of_evaluation,55,18.3
+Claude Sonnet 4.6,wrong_channel_escalation_instead_of_definitive_action,50,16.7
+Claude Sonnet 4.6,wrong_channel_hold_instead_of_definitive_action,16,5.3
+Claude Sonnet 4.6,over_deferral_when_continuation_authorized,15,5.0
