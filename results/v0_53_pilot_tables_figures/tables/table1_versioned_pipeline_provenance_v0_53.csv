@@ -1,0 +1,12 @@
+version,artifact,purpose,status
+v0.40,Expanded design matrix,"Defined 100 trajectories / 300 visit-level decisions across cancer types, therapy classes, and action labels.",locked
+v0.41,Synthetic case generation,Generated longitudinal oncology cases from the v0.40 design matrix.,locked
+v0.42,Integrity audit,"Confirmed 100 trajectories, 300 visits, schema validity, and design/generation consistency.",locked
+v0.43 / v0.43b,Clean and blinded prompts,Generated model prompt sets; blinded set removed overt metadata cues.,locked
+v0.44 / v0.44b,Clean/blinded GPT-4.1 pipeline validation,Showed ceiling-level 100% AACR; interpreted as pipeline validation and cue-alignment warning.,locked
+v0.45,Pressure taxonomy and cue-contamination protocol,Locked four-layer evaluation architecture and naturalistic pressure framework.,locked
+v0.46 / v0.46a-c,Naturalistic pressure pilot and confirmation,"Generated, audited, and author-domain confirmed 30 naturalistic pressure probes.",locked
+v0.47,GPT-4.1 naturalistic pressure evaluation,Identified conservative wrong-channel collapse under naturalistic clinical pressure.,locked
+v0.50,Evidence-contract controller intervention,Corrected wrong-channel model outputs using deterministic evidence/action contract.,locked
+v0.51,Controller ablation,Showed full evidence/action routing was required; safety-block-only did not help.,locked
+v0.52,Pilot synthesis memo,"Preserved pilot story, claims, caveats, and next steps.",locked

@@ -1,0 +1,6 @@
+table,filename,title
+Table 1,table1_versioned_pipeline_provenance_v0_53.csv,Versioned pipeline provenance
+Table 2,table2_v0_47_gpt41_pressure_results_v0_53.csv,v0.47 GPT-4.1 pressure results
+Table 3,table3_v0_50_controller_before_after_v0_53.csv,v0.50 controller before/after results
+Table 4,table4_v0_51_controller_ablation_v0_53.csv,v0.51 controller ablation results
+Table 5,table5_v0_51_paired_correctness_test_v0_53.csv,v0.51 paired correctness test

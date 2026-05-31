@@ -1,0 +1,7 @@
+figure,filename,title,purpose
+Figure 1,figure1_four_layer_evaluation_architecture_v0_53.png,Four-layer evaluation architecture,"Shows Layer 1 clean case, Layer 2 naturalistic pressure, Layer 3 cue audit, Layer 4 controller test."
+Figure 2,figure2_clean_pressure_controller_aacr_v0_53.png,Clean vs pressure vs controller AACR,"Shows ceiling clean performance, pressure collapse, and controller correction."
+Figure 3,figure3_v0_47_expected_vs_selected_heatmap_v0_53.png,v0.47 expected vs selected action heatmap,Shows GPT-4.1 wrong-channel collapse into escalation/hold.
+Figure 4,figure4_v0_50_expected_vs_controller_heatmap_v0_53.png,v0.50 expected vs controller-selected action heatmap,Shows controller restoration of action-channel alignment.
+Figure 5,figure5_v0_51_ablation_aacr_v0_53.png,v0.51 ablation AACR,Shows full controller outperforms safety-block and partial-router ablations.
+Figure 6,figure6_wrong_channel_collapse_schematic_v0_53.png,Wrong-channel collapse schematic,Explains the severity-action mismatch / action-channel interference phenotype.
