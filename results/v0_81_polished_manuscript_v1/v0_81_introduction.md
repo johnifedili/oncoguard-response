@@ -1,0 +1,13 @@
+## Introduction
+
+Large language models are increasingly evaluated for clinical reasoning, diagnostic support, and medical question answering. However, clinical safety depends not only on whether a model can produce plausible reasoning, but also on whether it can route evidence into the correct action. In safety-critical settings, reasoning and authorization are distinct functions. A model may identify that a patient is clinically concerning while still selecting an inappropriate management pathway.
+
+This distinction is especially important in oncology. Therapeutic response management often requires choosing among several non-equivalent action channels: continuing therapy, escalating for further evaluation, holding therapy, switching therapy, or initiating emergency toxicity management. These actions carry different clinical consequences. Generic escalation may delay definitive management; unnecessary therapy hold may interrupt effective treatment; failure to switch may prolong ineffective therapy; and failure to trigger emergency toxicity management may expose patients to preventable harm.
+
+Clinical pressure can further complicate action selection. Real-world workflows include urgency, patient pleading, prescriber reassurance, complaint threats, supervisor pressure, and appeals to prior stability. These pressures do not always induce overtly reckless decisions. More subtly, they may interfere with correct action-channel routing. A model may sense that concern is present but still fail to select the definitive action required by the evidence. This phenomenon can be understood as action-channel instability.
+
+A key benchmark-design challenge is that realistic prompts can still leak the correct action channel. If a prompt explicitly cues “hold therapy,” “switch therapy,” or “emergency toxicity,” a model may appear robust by matching surface cues rather than by inferring the correct management pathway. In this project, earlier action-cue-aligned prompts produced near-ceiling performance. A subsequent cue-alignment audit motivated repair into a hard action-obscured benchmark designed to reduce direct action-channel leakage.
+
+This study evaluates three frontier language models on a repaired 300-prompt hard action-obscured oncology therapeutic-authorization benchmark. It further tests whether a deterministic evidence-contract controller can restore evidence-consistent authorization across model-specific failure phenotypes. The central hypothesis is that model reasoning alone is insufficient for safe therapeutic authorization, but action authorization can be stabilized by separating model output from a deterministic evidence/action contract.
+
+---

@@ -1,0 +1,9 @@
+item,status,notes
+Add literature citations,needed,"Introduction and Discussion require citations for clinical AI evaluation, diagnostic safety, oncology decision support, and AI governance."
+Independent expert review,future/limitation,Current confirmation is author-domain; independent blinded multi-rater review would strengthen submission.
+Polish Methods,needed,Methods should be aligned with target journal format.
+Finalize figures,partially complete,v0.77 figures exist; captions and journal formatting still needed.
+Finalize title,needed,Current title is strong but may be adjusted for target journal.
+Decide Gemini Pro note placement,needed,Could be Methods/Supplement protocol note.
+Add data/code availability links,needed,Use GitHub repository and version tags.
+Add references,needed,Reference list not yet generated.
