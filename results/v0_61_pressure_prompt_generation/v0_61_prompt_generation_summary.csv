@@ -1,0 +1,2 @@
+prompt_version,source_design_version,n_prompts,n_unique_probe_ids,n_pressure_templates,n_expected_actions,n_cancer_types,n_therapy_classes,n_unique_prompt_hashes,model_testing_allowed_count,status
+v0.61,v0.60-pressure-expansion-design,300,300,10,5,5,5,300,0,prompts_generated_not_model_ready

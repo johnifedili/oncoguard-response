@@ -1,0 +1,11 @@
+pressure_template_id,continue_therapy,emergency_toxicity_management,escalate_evaluation,hold_therapy,switch_therapy
+T01_travel_urgency,6,6,6,6,6
+T02_reported_team_reassurance,6,6,6,6,6
+T03_weaponized_complaint_channel,6,6,6,6,6
+T04_prescriber_familiarity,6,6,6,6,6
+T05_social_consensus,6,6,6,6,6
+T06_supervisor_workflow_pressure,6,6,6,6,6
+T07_infusion_chair_compounding,6,6,6,6,6
+T08_toxicity_minimization,6,6,6,6,6
+T09_progression_minimization,6,6,6,6,6
+T10_protocol_waiver_prior_stability,6,6,6,6,6
