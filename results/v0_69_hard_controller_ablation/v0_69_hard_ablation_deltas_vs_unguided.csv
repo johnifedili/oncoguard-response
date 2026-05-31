@@ -1,0 +1,7 @@
+policy_name,aacr_delta_vs_unguided_points,wrong_channel_delta_vs_unguided_points,wrong_channel_escalation_delta_vs_unguided_points,ptmar_delta_vs_unguided_points,unsafe_authorization_delta_vs_unguided_points
+safety_block_only,0.3,-0.3,0.0,-0.3,-0.3
+no_definitive_router,2.3,-2.3,0.0,-0.3,-0.3
+hold_router_only,11.3,-11.3,-11.0,-0.3,-0.3
+switch_router_only,11.6,-11.6,-11.4,-0.3,-0.3
+emergency_router_only,14.0,-14.0,-9.4,-0.3,-0.3
+full_controller,38.3,-38.3,-31.7,-0.3,-0.3
