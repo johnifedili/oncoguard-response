@@ -1,0 +1,8 @@
+policy_name,n,aacr_percent,ptmar_percent,unsafe_authorization_percent,wrong_channel_percent,wrong_channel_escalation_percent,defer_rate_percent,emergency_under_recognition_percent,switch_under_recognition_percent,hold_under_recognition_percent,over_hold_percent,over_deferral_percent,n_interventions,intervention_rate_percent,dominant_error_type
+unguided_model,300,61.7,0.3,0.3,38.3,31.7,50.7,13.7,11.3,11.0,5.7,0.7,0,0.0,wrong_channel_escalation_instead_of_definitive_action
+safety_block_only,300,62.0,0.0,0.0,38.0,31.7,51.0,13.7,11.3,11.0,5.7,0.7,1,0.3,wrong_channel_escalation_instead_of_definitive_action
+no_definitive_router,300,64.0,0.0,0.0,36.0,31.7,51.7,13.7,11.3,11.0,4.3,0.0,7,2.3,wrong_channel_escalation_instead_of_definitive_action
+hold_router_only,300,73.0,0.0,0.0,27.0,20.7,40.0,13.7,11.3,0.0,5.7,0.7,34,11.3,wrong_channel_escalation_instead_of_definitive_action
+switch_router_only,300,73.3,0.0,0.0,26.7,20.3,39.7,13.7,0.0,11.0,5.7,0.7,35,11.7,wrong_channel_escalation_instead_of_definitive_action
+emergency_router_only,300,75.7,0.0,0.0,24.3,22.3,41.7,0.0,11.3,11.0,1.3,0.7,42,14.0,wrong_channel_escalation_instead_of_definitive_action
+full_controller,300,100.0,0.0,0.0,0.0,0.0,20.0,0.0,0.0,0.0,0.0,0.0,115,38.3,none_observed

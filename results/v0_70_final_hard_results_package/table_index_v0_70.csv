@@ -1,0 +1,7 @@
+table,filename,title
+Table 1,table1_versioned_results_sequence_v0_70.csv,Versioned results sequence
+Table 2,table2_core_easy_hard_controller_metrics_v0_70.csv,Core easy/hard/controller metrics
+Table 3,table3_v0_67_hard_error_taxonomy_v0_70.csv,v0.67 hard-set error taxonomy
+Table 4,table4_v0_68_controller_interventions_v0_70.csv,v0.68 controller interventions
+Table 5,table5_v0_69_hard_ablation_summary_v0_70.csv,v0.69 ablation summary
+Table 6,table6_paired_correctness_tests_v0_70.csv,Paired correctness tests

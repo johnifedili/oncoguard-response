@@ -1,0 +1,4 @@
+condition,source_version,n,aacr_percent,wrong_channel_percent,wrong_channel_escalation_percent,ptmar_percent,unsafe_authorization_percent,dominant_error_type
+Easy/action-cue-aligned prompts,v0.63,300,98.3,1.7,0.0,0.0,0.0,over_hold_instead_of_evaluation
+Hard/action-obscured prompts,v0.67,300,61.7,38.3,31.7,0.3,0.3,wrong_channel_escalation_instead_of_definitive_action
+Hard/action-obscured + evidence-contract controller,v0.68,300,100.0,0.0,0.0,0.0,0.0,none_observed

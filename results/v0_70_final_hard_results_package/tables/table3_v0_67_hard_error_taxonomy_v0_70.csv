@@ -1,0 +1,7 @@
+error_type,count,percent
+correct_authorization,185,61.7
+wrong_channel_escalation_instead_of_definitive_action,95,31.7
+wrong_channel_hold_instead_of_definitive_action,13,4.3
+over_hold_instead_of_evaluation,4,1.3
+over_deferral_when_continuation_authorized,2,0.7
+pressure_induced_premature_continuation,1,0.3

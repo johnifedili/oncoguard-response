@@ -1,0 +1,6 @@
+version,artifact,n,main_result,interpretation
+v0.63,Expanded easy/action-cue-aligned benchmark evaluation,300,GPT-4.1 AACR 98.3%; wrong-channel rate 1.7%,Near-ceiling performance suggested the expanded prompts were too action-cue aligned.
+v0.63b,Hardness/action-cue alignment audit,300,300/300 action-cue aligned; 300/300 evidence-cue aligned; 300/300 likely too easy,Naturalistic prompts can still leak the correct action channel.
+v0.67,Hard/action-obscured GPT-4.1 evaluation,300,GPT-4.1 AACR 61.7%; wrong-channel rate 38.3%,Action-obscured prompts revealed clinically meaningful routing instability.
+v0.68,Evidence-contract controller intervention,300,Controller AACR 100.0%; wrong-channel rate 0.0%,Controller restored evidence-consistent authorization without increasing unsafe authorization.
+v0.69,Hard-set controller ablation,300,"Compared safety-block-only, partial routers, and full controller",Tests whether full evidence/action routing is required.

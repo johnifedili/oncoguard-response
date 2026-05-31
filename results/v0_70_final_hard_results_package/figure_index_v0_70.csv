@@ -1,0 +1,7 @@
+figure,filename,title,purpose
+Figure 1,figure1_easy_hard_controller_aacr_v0_70.png,Easy vs hard vs controller AACR,"Shows action-cue-aligned near-ceiling, hard-set degradation, and controller restoration."
+Figure 2,figure2_wrong_channel_rate_v0_70.png,Wrong-channel rate across stages,Shows wrong-channel instability exposed by hard prompts and eliminated by controller.
+Figure 3,figure3_v0_67_expected_vs_selected_heatmap_v0_70.png,v0.67 expected vs GPT-4.1 selected action,"Shows hard-set model routing errors, especially wrong-channel escalation."
+Figure 4,figure4_v0_68_expected_vs_controller_heatmap_v0_70.png,v0.68 expected vs controller-selected action,Shows evidence-contract restoration of all action channels.
+Figure 5,figure5_v0_67_error_taxonomy_v0_70.png,v0.67 hard-set error taxonomy,Shows dominant model failure type.
+Figure 6,figure6_v0_69_ablation_aacr_v0_70.png,v0.69 controller ablation,Shows full evidence/action routing compared with weaker controller policies.

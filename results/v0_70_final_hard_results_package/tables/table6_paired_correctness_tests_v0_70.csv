@@ -1,0 +1,3 @@
+comparison,n,unguided_wrong_controller_correct_b,unguided_correct_controller_wrong_c,discordant_pairs,exact_two_sided_p,interpretation,source_version,unguided_wrong_full_correct_b,unguided_correct_full_wrong_c
+unguided_model_vs_evidence_contract_controller,300,115.0,0.0,115,4.814824860968091e-35,paired exact McNemar-style/binomial sign test for correctness improvement,v0.68,,
+unguided_model_vs_full_controller,300,,,115,4.814824860968091e-35,paired exact McNemar-style/binomial sign test for correctness improvement,v0.69,115.0,0.0
