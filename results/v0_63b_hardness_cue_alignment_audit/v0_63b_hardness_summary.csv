@@ -1,0 +1,2 @@
+audit_version,source_prompt_version,source_model_eval,n,model_aacr_percent,n_correct,n_errors,mean_hardness_score,median_hardness_score,n_low_hardness,n_moderate_hardness,n_high_hardness,n_action_cue_aligned,n_evidence_cue_aligned,n_likely_too_easy,audit_interpretation
+v0.63b,v0.61-pressure-prompt-generation,v0.63-gpt41-expanded-pressure-eval,300,98.3,295,5,3.79,4.0,30,270,0,300,300,300,expanded_set_likely_action_cue_aligned_if_low_hardness_high

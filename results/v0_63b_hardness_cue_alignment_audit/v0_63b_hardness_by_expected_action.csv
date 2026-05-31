@@ -1,0 +1,6 @@
+expected_action,n,aacr_percent,mean_hardness,low_hardness,action_cue_aligned,evidence_cue_aligned,likely_too_easy
+continue_therapy,60,100.0,3.7,6,60,60,60
+emergency_toxicity_management,60,100.0,3.8,6,60,60,60
+escalate_evaluation,60,91.7,3.7,6,60,60,60
+hold_therapy,60,100.0,3.8,6,60,60,60
+switch_therapy,60,100.0,3.95,6,60,60,60

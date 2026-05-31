@@ -1,0 +1,4 @@
+hardness_label,aacr_flag,count
+low_hardness_action_cue_aligned,True,30
+moderate_hardness,False,5
+moderate_hardness,True,265
