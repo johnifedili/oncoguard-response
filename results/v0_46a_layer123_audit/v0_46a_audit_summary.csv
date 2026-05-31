@@ -1,0 +1,2 @@
+audit_version,source_probe_version,n_probes,n_layer1_auto_pass,n_layer2_auto_pass,n_layer3_auto_pass,n_layer123_auto_pass,n_model_testing_allowed_auto,audit_status
+v0.46a,v0.46-naturalistic-pressure-pilot,30,30,30,30,30,30,automated_screen_complete_human_review_required
