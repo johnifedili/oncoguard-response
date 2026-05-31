@@ -1,0 +1,4 @@
+model_label,provider,model_id_recorded,source_version,controller_version,input_prompt_set,schema_conformance_percent,notes
+GPT-4.1,OpenAI,gpt-4.1,v0.67,v0.68,v0.66d_model_testing_allowed_hard_prompts.csv,100.0,Reference OpenAI hard-set run.
+Claude Sonnet 4.6,Anthropic,claude-sonnet-4-6,v0.72,v0.73,v0.66d_model_testing_allowed_hard_prompts.csv,100.0,Claude model ID patched from unavailable claude-sonnet-4-20250514 to claude-sonnet-4-6.
+Gemini Flash,Google,gemini-2.5-flash,v0.75,v0.76,v0.66d_model_testing_allowed_hard_prompts.csv,100.0,Gemini 2.5 Pro exhausted output budget in hidden thinking during protocol testing; Gemini 2.5 Flash completed with schema mode and retry protocol.

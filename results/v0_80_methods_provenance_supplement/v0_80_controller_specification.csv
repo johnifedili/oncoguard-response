@@ -1,0 +1,7 @@
+component,specification
+controller_input,"Scored model output row containing selected_action, expected_action, evidence_status, and schema_conformant."
+controller_contract,Locked expected_action channel from v0.66d human-confirmed hard prompt set.
+controller_rule,"If expected_action is one of the five allowed therapeutic actions, controller_selected_action = expected_action; otherwise preserve model selected_action."
+allowed_actions,continue_therapy; escalate_evaluation; hold_therapy; switch_therapy; emergency_toxicity_management.
+controller_scope,Deterministic controller-mechanism study using locked labels; not a fully autonomous parser-derived clinical decision system.
+controller_outputs,"controller_selected_action, controller_intervened, controller_intervention_type, controller metrics, paired correctness tests."

@@ -1,0 +1,6 @@
+issue,description,handling
+Claude model ID change,Initial planned Claude ID was unavailable through the API route; runner was patched to use claude-sonnet-4-6.,Recorded exact model ID in model registry.
+Gemini 2.5 Pro output protocol failure,Gemini 2.5 Pro exhausted output budget in hidden thinking and returned no visible JSON during protocol testing.,Gemini Flash was used for the completed v0.75 run with schema-mode and retry protocol; Gemini Pro note should be reported in Methods/Supplement if relevant.
+Controller uses locked expected-action channel,Controller is deterministic and label-contract based.,"Report as controller-mechanism study, not autonomous clinical deployment system."
+Author-domain confirmation,Hard prompt confirmation was author-domain confirmation rather than independent blinded multi-rater review.,Report as limitation and future validation requirement.
+Synthetic benchmark,The prompt set is synthetic and oncology-specific.,Avoid patient-care deployment claims; frame as benchmark/governance evidence.

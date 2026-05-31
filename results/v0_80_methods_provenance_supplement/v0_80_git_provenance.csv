@@ -1,0 +1,3 @@
+current_branch,current_commit,working_tree_status_short,relevant_remote_branch,provenance_package_version
+v0.24-clean-benchmark-branch,699272d075e1554b4122bf9d9a126bc1c415bf29,"?? analysis/build_v0_80_methods_provenance_supplement.py
+?? eval/run_gemini_pro_v0_75_hard_pressure_checkpointed.py",v0.24-clean-benchmark-branch,v0.80
