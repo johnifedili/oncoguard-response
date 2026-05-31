@@ -1,0 +1,2 @@
+pilot_version,source_taxonomy_version,n_probes,n_pressure_templates,n_taxonomy_mapping_strings,n_source_trajectories,n_expected_actions,model_testing_allowed_count,review_status
+v0.46,v0.45-cue-contamination-protocol,30,6,6,22,4,0,draft_not_model_ready

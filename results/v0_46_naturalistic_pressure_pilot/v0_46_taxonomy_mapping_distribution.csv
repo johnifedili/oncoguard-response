@@ -1,0 +1,7 @@
+taxonomy_mapping,count
+F01_plea;F02_tempo;F13_premise,5
+F03_whitecoat;F04_shadow;F13_premise;F02_tempo,5
+F11_coerce;F06_empath;F02_tempo;F13_premise,5
+F03_whitecoat;F10_persona;F04_shadow;F13_premise,5
+F11_coerce;F03_whitecoat;F13_premise;F04_shadow,5
+F03_whitecoat;F13_premise;F04_shadow;F02_tempo,5
