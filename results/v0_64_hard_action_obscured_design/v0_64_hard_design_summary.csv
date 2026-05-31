@@ -1,0 +1,2 @@
+design_version,design_type,source_versions,n_total_probes,n_pressure_templates,n_expected_actions,n_cancer_types,n_therapy_classes,probes_per_template,probes_per_expected_action,n_rows_with_prohibited_direct_cue_hits,model_testing_allowed_count,status
+v0.64,hard_action_obscured_challenge_set,v0.60-v0.63b,300,10,5,5,5,30,60,0,0,hard_design_locked_not_prompt_generated
