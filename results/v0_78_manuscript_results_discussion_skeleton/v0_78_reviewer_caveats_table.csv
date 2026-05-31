@@ -1,0 +1,6 @@
+caveat,wording
+Synthetic benchmark,This benchmark is synthetic and should not be interpreted as patient-care deployment evidence.
+Controller contract,The controller uses the locked expected-action channel as the deterministic evidence/action contract and is not yet a fully autonomous parser-derived clinical decision system.
+Human confirmation,Human/expert confirmation was author-domain confirmation rather than independent blinded multi-rater adjudication.
+Model snapshots,"Provider model behavior may change; exact model IDs, dates, and output artifacts should be reported."
+Domain scope,The benchmark focuses on oncology therapeutic authorization and requires domain-specific adaptation before extension to other clinical settings.

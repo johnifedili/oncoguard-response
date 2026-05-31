@@ -1,0 +1,6 @@
+claim_type,claim,supporting_result,recommended_location
+primary empirical finding,Hard action-obscured prompts exposed action-channel instability across all three models.,Unguided AACR ranged from 54.7% to 66.7%; wrong-channel rate ranged from 33.3% to 45.3%.,Results opening paragraph and Discussion principal findings.
+phenotype finding,Failure phenotype was model-specific.,GPT-4.1: generic escalation; Claude: over-hold/under-switch; Gemini: under-hold/generic escalation.,Results model-specific phenotype subsection.
+controller finding,The deterministic evidence-contract controller restored evidence-consistent authorization across all three models.,Controller-corrected AACR 100.0% and wrong-channel/PTMAR/unsafe authorization 0.0% across all three.,Results controller subsection and Discussion governance mechanism.
+benchmark-design finding,Action-cue-aligned prompts can overestimate model robustness.,v0.63 near-ceiling GPT-4.1 result followed by v0.63b cue-alignment audit and v0.67 hard-set degradation.,Discussion benchmark validity contribution.
+governance interpretation,"Safety-critical clinical AI should be evaluated as a controlled decision system, not only as a text generator.",Controller corrected distinct model-specific routing phenotypes without relying on model self-correction.,Discussion evidence-contract control and conclusion.

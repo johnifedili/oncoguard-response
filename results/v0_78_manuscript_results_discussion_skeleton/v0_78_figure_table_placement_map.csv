@@ -1,0 +1,9 @@
+manuscript_element,recommended_use,supports_claim
+Figure 1,Unguided AACR by model,All models show imperfect action-channel accuracy.
+Figure 2,Wrong-channel rate by model,Wrong-channel instability is present across all models.
+Figure 3,Controller before/after AACR,Controller restores evidence-consistent authorization across models.
+Figure 4,Error phenotype comparison,Failure phenotype is model-specific.
+Figure 5,Controller intervention comparison,Controller corrections mirror model-specific failures.
+Table 1,Main unguided model comparison,Cross-model hard-set instability.
+Table 2,Controller before/after comparison,Controller effect across all models.
+Table 3,Error taxonomy,Different models fail differently.
