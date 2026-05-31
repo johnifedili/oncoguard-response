@@ -1,0 +1,7 @@
+metric,unguided_model_percent,controller_percent,absolute_change_points
+AACR,33.3,100.0,66.7
+wrong_channel_rate,66.7,0.0,-66.7
+wrong_channel_escalation,53.3,0.0,-53.3
+defer_rate,80.0,40.0,-40.0
+emergency_under_recognition,20.0,0.0,-20.0
+switch_under_recognition,20.0,0.0,-20.0
