@@ -1,0 +1,7 @@
+caveat,handling
+Model snapshot instability,"Record exact provider model ID, date, and output file hash for each run."
+Provider-specific API behavior,Use temperature=0 where supported; require JSON output; record parse/schema conformance separately.
+Controller is deterministic evidence-contract controller,Do not describe as a fully autonomous clinical decision system.
+Author-domain confirmation,"Report that hard prompt confirmation was author-domain, not independent blinded multi-rater review."
+Synthetic benchmark,"Describe as synthetic oncology therapeutic-authorization benchmark, not patient-care deployment evidence."
+Multiple models,Frame as cross-model robustness/sensitivity analysis unless independently powered for model ranking.

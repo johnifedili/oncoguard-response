@@ -1,0 +1,7 @@
+analysis,description,planned_version
+Per-model summary,"Compute schema conformance, AACR, wrong-channel rate, wrong-channel escalation, PTMAR, unsafe authorization, defer rate, and action-specific under-recognition.",v0.72-v0.75
+Cross-model comparison,"Compare unguided AACR and failure phenotypes across GPT-4.1, Claude, Gemini, and optional models.",v0.75
+Error taxonomy by model,Tabulate dominant error type for each model; assess whether wrong-channel escalation remains dominant.,v0.75
+Controller normalization across models,"Apply deterministic evidence-contract controller to each model's outputs and compare corrected AACR, wrong-channel rate, PTMAR, and unsafe authorization.",v0.76
+Paired exact tests,"For each model, use paired exact McNemar-style/binomial sign test comparing unguided correctness vs controller-corrected correctness.",v0.76
+Between-model descriptive contrast,Use descriptive comparisons primarily; avoid overclaiming inferential superiority unless a formal paired design and multiplicity plan is added.,v0.75

@@ -1,0 +1,2 @@
+design_version,source_prompt_set,input_prompt_file,n_prompts,n_unique_probe_ids,n_unique_prompt_hashes,n_expected_actions,n_pressure_templates,n_cancer_types,n_therapy_classes,status
+v0.71,v0.66d-targeted-actioncue-repair,results/v0_66d_targeted_actioncue_repair/v0_66d_model_testing_allowed_hard_prompts.csv,300,300,300,5,10,5,5,hard_300_prompt_set_locked_for_multimodel_evaluation
