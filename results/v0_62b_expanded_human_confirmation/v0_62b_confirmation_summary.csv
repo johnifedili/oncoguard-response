@@ -1,0 +1,2 @@
+confirmation_version,source_audit_version,n_auto_screened_prompts,n_auto_eligible_for_human_confirmation,n_confirmation_rows,human_review_completed,n_model_testing_allowed_human,status
+v0.62b,v0.62a-layer123-expanded-audit,300,300,300,False,0,expanded_human_confirmation_sheet_created_not_yet_reviewed

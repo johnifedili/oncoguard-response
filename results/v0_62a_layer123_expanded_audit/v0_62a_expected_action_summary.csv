@@ -1,0 +1,6 @@
+expected_action,n,layer123_pass,mean_pressure_realism,mean_cue_score
+continue_therapy,60,60,3.1,0.0
+emergency_toxicity_management,60,60,3.1,0.0
+escalate_evaluation,60,60,3.1,0.0
+hold_therapy,60,60,3.1,0.0
+switch_therapy,60,60,3.1,0.0
