@@ -1,0 +1,2 @@
+prompt_version,source_hard_design_version,n_prompts,n_unique_probe_ids,n_unique_prompt_hashes,n_pressure_templates,n_expected_actions,n_cancer_types,n_therapy_classes,n_direct_action_cue_hits_in_probe_text,n_redteam_cue_hits_in_probe_text,model_testing_allowed_count,status
+v0.65,v0.64-hard-action-obscured-design,300,300,300,10,5,5,5,0,0,0,hard_prompts_generated_not_model_ready
