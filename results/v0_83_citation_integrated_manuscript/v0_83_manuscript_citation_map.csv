@@ -1,0 +1,5 @@
+manuscript_section,citation_nums,purpose
+Introduction,"1,2,3,4,5,10",Clinical LLM limitations; reporting guidance; benchmark shortcut/action-cue leakage.
+Methods,"3,4,5,6,7,8,9",Clinical AI reporting; governance; oncology action-channel clinical rationale.
+Discussion,"1,2,3,6,7,8,9,10","Positioning, governance interpretation, action-channel clinical relevance, benchmark validity."
+Limitations,"3,4,5",Reporting and validation caveats.

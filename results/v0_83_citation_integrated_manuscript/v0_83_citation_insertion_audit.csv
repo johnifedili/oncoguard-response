@@ -1,0 +1,13 @@
+section,status,citation_nums,rationale,target_text
+Introduction,inserted,"1,2",Anchor clinical LLM evaluation and limitation claims.,"Large language models are increasingly evaluated for clinical reasoning, diagnostic support, and medical question answering."
+Introduction,inserted,3-5,Connect naturalistic pressure framing to clinical AI reporting guidance.,Clinical pressure can further complicate action selection.
+Introduction,inserted,10,Support action-cue leakage and benchmark validity framing.,A key benchmark-design challenge is that realistic prompts can still leak the correct action channel.
+Methods,inserted,3-5,Support benchmark construction and reporting transparency.,The benchmark was developed through an iterative design and audit process.
+Methods,inserted,"8,9",Support clinical relevance of oncology therapeutic action channels.,"The primary performance endpoint was action-channel authorization correctness rate (AACR), defined as the proportion of outputs in which the model-selected action matched the expected action."
+Methods,inserted,"6,7",Support controller/risk-management framing.,A deterministic evidence-contract controller was applied to each model’s scored outputs.
+Discussion,inserted,"1,2",Place contribution relative to clinical LLM evaluation literature.,This study demonstrates that hard action-obscured oncology therapeutic-authorization prompts expose clinically meaningful action-channel instability across multiple frontier models.
+Discussion,inserted,"8,9",Support clinical relevance of multiple action channels.,This framing is important because not all unsafe clinical AI behavior appears as reckless continuation.
+Discussion,inserted,3,Support workflow/clinical evaluation framing.,The pressure templates used in this benchmark were designed to reflect real workflow pressures rather than artificial jailbreaks.
+Discussion,inserted,"6,7",Support governance architecture framing.,"This supports a governance architecture in which clinical AI systems are evaluated as controlled decision systems, not merely as text generators."
+Discussion,inserted,10,Support benchmark validity and leakage contribution.,This work also contributes a benchmark-design lesson.
+Limitations,inserted,3-5,Support reporting and validation caveats.,This study has several limitations.
